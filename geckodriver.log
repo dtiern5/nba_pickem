@@ -35,3 +35,5 @@ console.info: MINT: Loading search-config defaults.
 1614741195564	Marionette	ERROR	[15] No reply from Marionette:Register
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
 1614741240456	Marionette	INFO	Stopped listening on port 35689
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
