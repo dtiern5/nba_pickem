@@ -1,0 +1,1205 @@
+1614711634658	geckodriver	INFO	Listening on 127.0.0.1:47183
+1614711634661	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletqWG3r"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614711636104	Marionette	INFO	Listening on port 44831
+1614711636195	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614711636201	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614711706451	Marionette	INFO	Stopped listening on port 44831
+1614711713343	geckodriver	INFO	Listening on 127.0.0.1:36863
+1614711713347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFNUJB9"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614711714856	Marionette	INFO	Listening on port 34637
+1614711714968	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614711714977	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614712443658	geckodriver	INFO	Listening on 127.0.0.1:44857
+1614712443662	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile825X5v"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614712445130	Marionette	INFO	Listening on port 40133
+1614712445187	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614712445197	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://picks.nba.com/primetime-picks line 1 > injectedScript, line 4: TypeError: googletag.pubads is not a function
+1614712461006	Marionette	INFO	Stopped listening on port 40133
+1614712535782	geckodriver	INFO	Listening on 127.0.0.1:51925
+1614712535787	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1O7EYF"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614712537145	Marionette	INFO	Listening on port 44315
+1614712537210	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: MINT: Loading search-config defaults.
+1614712537219	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1614712583185	Marionette	INFO	Stopped listening on port 44315
+1614713255629	geckodriver	INFO	Listening on 127.0.0.1:46691
+1614713255633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5ocLCp"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614713257114	Marionette	INFO	Listening on port 36075
+1614713257159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614713257169	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+console.info: MINT: main/search-config update being skipped
+1614713579686	geckodriver	INFO	Listening on 127.0.0.1:35813
+1614713579690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerYzmb6"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614713581228	Marionette	INFO	Listening on port 37247
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614713581323	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614713581336	Marionette	ERROR	[15] No reply from Marionette:Register
+1614713584729	Marionette	INFO	Stopped listening on port 34637
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+1614713585289	Marionette	INFO	Stopped listening on port 36075
+JavaScript error: https://secure.quantserve.com/quant.js, line 2: NS_ERROR_UNEXPECTED: 
+JavaScript error: chrome://marionette/content/actors/MarionetteCommandsChild.jsm, line 64: TypeError: this.document.defaultView is null
+Marionette threw an error: NotFoundError: WindowGlobalParent.getActor: No such JSWindowActor 'MarionetteCommands'
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:332:69
+unregisterCommandsActor@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:395:15
+GeckoDriver.prototype.deleteSession@chrome://marionette/content/driver.js:3089:5
+onClosed@chrome://marionette/content/server.js:196:17
+close@chrome://marionette/content/transport.js:225:18
+onInputStreamReady@chrome://marionette/content/transport.js:379:14
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteCommands'
+1614713614298	Marionette	INFO	Stopped listening on port 37247
+1614713797580	geckodriver	INFO	Listening on 127.0.0.1:43841
+1614713797585	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFgovFE"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614713799056	Marionette	INFO	Listening on port 44449
+1614713799112	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614713799120	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614714020965	Marionette	INFO	Stopped listening on port 44449
+1614714102850	geckodriver	INFO	Listening on 127.0.0.1:50815
+1614714102855	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNegMqZ"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614714104260	Marionette	INFO	Listening on port 37651
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614714104376	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614714104385	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: , line 0: uncaught exception: undefined
+1614714173220	Marionette	INFO	Stopped listening on port 37651
+JavaScript error: https://cdn.doubleverify.com/dv-measurements991.js, line 1: TypeError: n.WindowAdaptor.workingDocument() is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1614714338971	geckodriver	INFO	Listening on 127.0.0.1:59235
+1614714338975	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKLRV19"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614714340412	Marionette	INFO	Listening on port 41865
+1614714340499	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614714340509	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/435357/53034787/xbbe/creative/adj?p=APEucNXnOXq1oSoO_8L-DMS5L9qNt1d5daQS4scNnJVQJXrv40Q_Slo&d=CnkAoCZ_4AkBdz4Uq3Z57kjOaz2A_nTWOvvOkYT6pS8r_9vjFkaWIMkv6ofMxQbQHk2W5-TlYxCUGU1we3b0loVpbgg1TT0fA8L7S_FYVEBNS-YizSGj9XJhG2A9QNZ5csxmaCQfF9JeNOQcFTXk-lLF9KS0d117epN2ErkSAKAmf-CvqbfCSYzh8cixKwKu6jbNmZpTGdxW8J_pQs6T6Tlkr7MhXzUmArQpbSqQ0GhJvFkdl8173wymGpy7jIRDtNHgivHiryjTQpQueBhizh4MtVU-00IbDmnQfgqR2vklPmhAwT0LTQDOt5_WlExJocn8n7zB908qLzTiB2e5hUh99OIkOLAyuXZ1L3FlsRNpE1uY4Yn9YMmaUCL6n_ZOt0H3YWLQJriEkMmvRykOzFTb7u1HMPaOVm5SBCwjBkwefvTlskjd9599Dw8EJLcOJVgUk6Ryg1UwlZuxco9JMLGuEfdQuECIpHDrIYblr83Ye4Gbzqlzvi8mnNZaz_mPzLgWLvA1YRKlu16PZZTqag36wjeApUwG6GsSaF_KJ_EaUQIHx7-INz0KsteQHP3pquXCUw48nP2WLRN_SxnTwD-10l8i2AAujqlzrqdIWH2GYRoh1LlfGpBcjfD6tu552D8nIAGHEKTe2HVKtedaDJ80hqroDcSgGcllFeZajvOG6PSbDWet0Tm8oJ9kGba3znBfeODzKO72pZ0OyFJCT3nbOUgwOGQ9jtnHni8HCNlsRXbkc7OM4fn9Ltdb55zxSbfUrp4g7gVfNlXCTqcuxGhSvwirX3GoxNK34bJCWt9Q7XAvwb30XBpIWSmjvx1KT6kgrohN_xlGHMFVvHNfMXnQFb9YB6pnRs4JYN69YhiN9UdUir5QjBwfHQEdhyj3bm5gZdh-7SF0_gnqSJPrQXr3K4Xpe9dD-k3AtZ7BlWJSmW-lurgxAn_fN71SKHyRBtvT32BPm5BWqkJrS8V_3CzEVMC-482ueEQEQ6g4EvFHZMKvZF3OnL6KauxLvmmZEiDaKbwvH7bWGx8VIaMi4FE5Uf4yL6v81bWK74Jg3eLhL1NhBP78nlmVmKDvnLmYU83U0Jnb3I296nwgpGIyYGWQ35mQSSfFmQI4oF_8x6JeM9ag0iwn8sosBoZtrR5C8GnoKZ5Wh9llSA2F_it1zPKGNAxwBXoqqe7nroz3Y0o2AeUrzLRXWS16_t1a71TipAUTwPF7dSCvOYR6muscG21EptPe7z3RDcMrddLQtJaE6rftNQYtsr4M_zq92GpVMHtuJ-HvFKIhX_Ekzit3OsgCx4hbRWW3pLpem44iKSlU2FhHDZDwqQvhNk3X1NxxL9OVXyckDSAsjWBR9belg9Y2N5AYbE7c1y-GEpxyAL_uhZNJZk6ZVznp5iWOOQCciKAovAPCXyMw1yqOGmOEol_4QAP3HK1wcRaDO1ZbQUeX_idDbxuKltCLFTz08rAvB7mEBKUc-JWXv-5mj-dSz6QtNUv3_IRhjZQKd3FsKvOaKrlmWB2bBVlk0JlfizMUPKwzjh2UXO13gSISHecZrAGs5H3FmeGODcahC2ZHeCwUgIxvKGIheVCQHTXVxrevpbjsXIU4Gj7b8EDFMY4OwwpNyfCOSbRaGtQDi2JMOD7CXM8PH79BOOVhLqupfMmlvZjF0KLAjj_3V4J4GbaReq8lSd9Mh4LvlgWz4j0Uy91rZfkyj_bzqvplDdqJ4iPvGJyIi-1JUhOKwtImvMqaPqMfNlIfdwKvFfUXbBfSPTVQVB3zbXXAO5BJ5coCmy85z3EbmwhP1rR5XvqSZHce--47twVQQ9R7Fk-OQSklolWxFCRGoHK3FtT0WNv8fx3TOEbcigauDk5tWwKRIxmpJiU-OVJYtFt3ARRaD9KaSNNBqytDshyhrZcZsae7Te4AT2CwKIzw9CKdwSxUKA1ICGunQEHhUVf1P-wo4toCxBhefaSZuhbeoh8QxFWDi9rSHkDZP5RtZObF-ER8MbH1uG1xToTSTC4ytlmoImo36lgwW3pH-JVj1xBQfDwHY3wV4RuZPBttPT0YsmVypXPsJ14bmUrhLPTwACw69SnuYfoe_PeiP6-GwQ5YdiPOvLSCRjpgvqZ5kJaVnY75HlLn6w2DYXdlt1keE65hmZ8RMS6xgF8nkaEVkImFWCbvkWybDd9KmzqYaShK3VlVjmWjn9DQREOh8h53_AfDAgO9MAWovEx6MYjgF1U98ZAeQlCDklEOzCGeeaNLL9lF6Hl--zJhKd8j4U9Bgdr25tjsk0Bl53BX9yh25Vg5aocjMPxrZ7jqcmOGnYwOfVT3iIBZb5H7fZy5nTXyVuj93zbGGPRekVErUffQCxNQbkXuzE0M0Ppf6JIgkib1gY36hUuv_eyOXudZTdrDBQwtQrx5B9ohxnNXcMLyMIxyNxMiNHdhBxO9Y-fs8hPqvrOTcy_mJ2ZryWdBoD-FF_6Eq9koRspXAeAlVfV87UJ2FsZksVEp4BGQ35MfNpc2vJLStLNdu3l2gGnQU9mJ1qVTlBnvgTSDSoKsBuBmxk0jWWvfQrf-LCzlHHEzwtH-gQReqtyBOPUI3vJ40B20v_e8AFT7cF5d5IBU9-qt2zeak7BrQDTSUt8OY7x_9BRCg5cW4268dzVD6FSQCc3lS1gdvi3EB0fRPQGNSS93uwzYSS4nf_OQRQkhz-i81FHsz3WE5yWInzD99ayS8CG4FRrPBZIYX4oZjjrS008KjJjjTMEC0imVnq6LUZiU_hnMbB215ZCj5NGuS1GxTsbM3OWr_uxu4hfl9Dhs7R0Ge1H5qCzU8PNYEk3V74dADHNjlRnEyIEIDhziMldTIvL-9Ysrv3toI7JH67tFn0q6JjkQ6WJEQp3yxLyXNUWEw6AmRd5X96HLV74wKqUrnOBLwXXPVovbVGCZgmoF87bSiPXpkAAgG32M4x8DGG4BeArLpd5sux2fqTFw4qC7J0Z5p5v7iyMD6CuW-kkkknGLRG375VfTTFooq1KRo3kIk_maE_QE-23dm0AMFV9ZIrv3yuD1YWyI5TM0cIbOvov3l9mx-LiUcqsxtmg6FRa0dpBdB4ihQXCw7--Stc7OqHB4nC1qivX30jwvVVS95Hzd2DrTRSHENhL8WLNVozMIydxqw3Q5YBb0Q8Chm4H6XouEPPYahWSW4uGyq48JfJWZ0ajnzPm4yM4-M1b4WcaA3SaiHQNcW90X4RqfFKScXecPvhL4Ie5cS99yZlKDpmeDOMYnzSaSuRA2_TZWoo_KWOlFC58M_ZFQU4SNEnZfbC60yNV3zNn2zwLTxkHZwClmGkEIABI95GjOPcp7OOrTJzLcJQQxopcp__TTIjYUJtQEkS1z5hUmNRydKtIT63bNMJ7NIsWhInXTfoEe_XYNmk0Mh2AB, line 1069: NS_ERROR_NOT_INITIALIZED: 
+1614714414680	Marionette	INFO	Stopped listening on port 41865
+1614714720596	geckodriver	INFO	Listening on 127.0.0.1:33211
+1614714720600	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOSWDcY"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614714722062	Marionette	INFO	Listening on port 36837
+1614714722119	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614714722135	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614714796046	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614714799767	Marionette	INFO	Stopped listening on port 36837
+1614715333546	geckodriver	INFO	Listening on 127.0.0.1:44643
+1614715333550	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileM650bw"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614715334989	Marionette	INFO	Listening on port 45443
+1614715335072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614715335082	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1614715458657	geckodriver	INFO	Listening on 127.0.0.1:46439
+1614715458661	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebjaFZC"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614715460186	Marionette	INFO	Listening on port 38121
+1614715460282	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614715460292	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: https://picks.nba.com/primetime-picks/how-to-play line 1 > injectedScript, line 4: TypeError: googletag.pubads is not a function
+JavaScript error: , line 0: uncaught exception: undefined
+1614715531504	Marionette	INFO	Stopped listening on port 38121
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614716486519	Marionette	INFO	Stopped listening on port 45443
+1614727091400	geckodriver	INFO	Listening on 127.0.0.1:35013
+1614727091404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileomhyXm"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614727092838	Marionette	INFO	Listening on port 38915
+1614727092939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727092948	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3072 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-service-storylines.4107e398664b454dead5.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1292 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-adblock-promo.af2d3c9c674565ceca77.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3563 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.CanvasStickyShareButtons.aa9ff7e4f1fdf3044840.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7330 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.8643e110a8f87ca78a4f.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8480 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-video-modal.b10d6b595491558bc9b7.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 147 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.6f78796c474011299212.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3459 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-stream.b7675fb05aeb738778a9.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3276 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.SidekickWrapper.3e24a420871454d6ebab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 4015 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-sports-promos.7e970d67552cde4df9b8.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3070 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-slideshow.f1271cc40ae649705141.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3421 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/td-service-canvas.8188c8f6d84c17ccb422.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2373 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.message.8af80661fd8e8289bbaa.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1583 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-video.85b6db5cedb6aff58852.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 6593 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-follow.bdcbf0a0d6df38a9c90a.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2019 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-livecoverage.401f79609e6a8fe7eed6.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8097 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.95ddfb672d7cf8ff1f7c.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2806 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.UnifiedModalLayout.804b7ac4e87b1aad5958.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7818 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-page-transition.ab2c6a2c97a41b7377ab.min.js)
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1614727175584	Marionette	INFO	Stopped listening on port 38915
+1614727243263	geckodriver	INFO	Listening on 127.0.0.1:51393
+1614727243268	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileX4U728"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614727244829	Marionette	INFO	Listening on port 46175
+1614727244887	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727244897	Marionette	ERROR	[15] No reply from Marionette:Register
+1614727253504	Marionette	INFO	Stopped listening on port 46175
+1614727306749	geckodriver	INFO	Listening on 127.0.0.1:40587
+1614727306753	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebIVH5o"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614727308158	Marionette	INFO	Listening on port 41595
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614727308294	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727308305	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript error: https://picks.nba.com/primetime-picks, line 55: TypeError: hiddenFrame.contentWindow is null
+1614727426491	geckodriver	INFO	Listening on 127.0.0.1:42489
+1614727426496	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZNT6NZ"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614727428016	Marionette	INFO	Listening on port 43131
+1614727428118	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727428126	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: main/search-config update being skipped
+1614727625308	geckodriver	INFO	Listening on 127.0.0.1:57709
+1614727625313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTrsBQS"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614727626976	Marionette	INFO	Listening on port 38151
+1614727627031	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727627038	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: https://picks.nba.com/primetime-picks/how-to-play, line 7: ReferenceError: osdlfm is not defined
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7330 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.8643e110a8f87ca78a4f.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8480 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-video-modal.b10d6b595491558bc9b7.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8097 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.95ddfb672d7cf8ff1f7c.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3421 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/td-service-canvas.8188c8f6d84c17ccb422.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1292 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-adblock-promo.af2d3c9c674565ceca77.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3070 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-slideshow.f1271cc40ae649705141.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1583 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-video.85b6db5cedb6aff58852.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3072 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-service-storylines.4107e398664b454dead5.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2019 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-livecoverage.401f79609e6a8fe7eed6.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2373 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.message.8af80661fd8e8289bbaa.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3563 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.CanvasStickyShareButtons.aa9ff7e4f1fdf3044840.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7818 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-page-transition.ab2c6a2c97a41b7377ab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3276 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.SidekickWrapper.3e24a420871454d6ebab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 6593 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-follow.bdcbf0a0d6df38a9c90a.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3459 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-stream.b7675fb05aeb738778a9.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 4015 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-sports-promos.7e970d67552cde4df9b8.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 147 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.6f78796c474011299212.min.js)
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.info: MINT: main/search-config update being skipped
+1614727745836	geckodriver	INFO	Listening on 127.0.0.1:57669
+1614727745841	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGHExel"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614727747441	Marionette	INFO	Listening on port 33897
+console.info: MINT: Loading search-config defaults.
+1614727747468	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614727747477	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614727798341	Marionette	INFO	Stopped listening on port 33897
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614727857014	Marionette	INFO	Stopped listening on port 41595
+1614727857336	Marionette	INFO	Stopped listening on port 43131
+1614727857844	Marionette	INFO	Stopped listening on port 38151
+1614728057450	geckodriver	INFO	Listening on 127.0.0.1:59615
+1614728057455	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepzw7hz"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614728058940	Marionette	INFO	Listening on port 45101
+1614728058979	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614728058988	Marionette	ERROR	[18] No reply from Marionette:Register
+1614728107847	Marionette	INFO	Stopped listening on port 45101
+1614728169550	geckodriver	INFO	Listening on 127.0.0.1:54553
+1614728169555	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMN2WCm"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614728170913	Marionette	INFO	Listening on port 41365
+1614728170974	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614728170984	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: Invariant Violation: Minified React error #130; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=130&args[]=null&args[]=%20Check%20the%20render%20method%20of%20%60RenderTargetController%60. for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/vendor.ebfa829e0846cc13d68c.min.js, line 2: TypeError: t is null
+1614728222365	Marionette	INFO	Stopped listening on port 41365
+1614735301847	geckodriver	INFO	Listening on 127.0.0.1:34155
+1614735301852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegdynn7"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614735303261	Marionette	INFO	Listening on port 39151
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614735303374	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614735303383	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://picks.nba.com/primetime-picks, line 55: TypeError: hiddenFrame.contentWindow is null
+1614735352655	Marionette	INFO	Stopped listening on port 39151
+1614736161437	geckodriver	INFO	Listening on 127.0.0.1:38443
+1614736161442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKU65Sf"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614736162921	Marionette	INFO	Listening on port 42725
+1614736162961	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614736162969	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614736168954	Marionette	INFO	Stopped listening on port 42725
+1614736173553	geckodriver	INFO	Listening on 127.0.0.1:34971
+1614736173558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerHdkPO"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614736175071	Marionette	INFO	Listening on port 35477
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614736175176	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614736175189	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1614736176476	Marionette	INFO	Stopped listening on port 35477
+1614736177849	geckodriver	INFO	Listening on 127.0.0.1:38253
+1614736177853	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexQdWKV"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614736179335	Marionette	INFO	Listening on port 42267
+1614736179376	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614736179385	Marionette	ERROR	[15] No reply from Marionette:Register
+1614736364519	geckodriver	INFO	Listening on 127.0.0.1:38673
+1614736364523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejweSxR"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614736365987	Marionette	INFO	Listening on port 33683
+1614736366045	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614736366053	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://cdn.doubleverify.com/dv-measurements991.js, line 1: TypeError: n.WindowAdaptor.workingDocument() is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://googleads.g.doubleclick.net/dbm/ad?dbm_c=AKAmf-AakzU11dQB_oumqR70TVt6yiYX1voWjBsHv7BiqTA_D2oskpQCGlVkl6Vw3xRg6y4OsojxIcuND4oUBNLd5MvAiO0WrVi2R_czOAQGXOsVG_SIMyLmcr5CyLgJQc5PsbTfLKe2BDqy32TmdMfTc9WWGscMNQ&dbm_d=AKAmf-D4jCGmAo0XsJwJB0GaKX84GlObFr19RVPWcqvKkHQN2BuvKXvb5n6jwCHdquh8nlqovK33xF5dHU-PP-L3WYwGvx1gMs_hI7yxnfBdaFqKgqR95jb28JgC50LFfCjJhRF8IwDqwlPGAOwhVP8URhhoKLznJA_IIW7Ir71w_wLDFwfP_9vtc1obwEPUDyKvUWWF2swr55IESoL_3gch8g_6UpZACEfU5r1yL_eYrQe00cxLxd5IuzJDv7JbIxj3TT9PGJyRpvf0CQx4y160HHGq1hNKzOBkC4tkQ-CIOWOtoHID07n01bxJjXP_gBgkX0o_9y1YbRapxwn9BpYhM15QNr_JAySBwOgDOYU3LHrAISyMQPwoaAsdAF7x5bKk2HduNZM6TmZh0cUSnP7UyS7uOlcLFE9h9H52J9XYBG-J7vZ0cbtCOSza20OrVD5VyTCXTqriHj9rU2KAs0R-DFXfhQozIdWpW_HVgwcs6FhMW41V8AtgxoOo498X9TVhE5UYu_6GTHFRqyc6l7ahnhRIPmsuGoj2x-4hqtkbJ7FUM9M_Z8F7fY5lryccVGZOdMJ1CVkM6rqvLk-nODgVV5OKQO2DCx7x8nW-ulvcnBBcTlsYS-2OdTw4Ewk01g7EWqKAv5OSPjf4yNs-ajU5wYt9jQKXt4dpuVZ-Lmh-EJzFG0LiHD4C-y-5HLXGNs5yCAom7IF1XpBM0XVnI_l1XveDV5crPKfXiCM7Ul09cEeNS8X-AM60LxyQcxpfrn1dCZfgjKf6Sl2axPUHqb3b3RA1h6Kh9uGLz1-0Phn1KICS91bADM3-mjYu6eO1qj_fSm03MjB8heyYEV1-S2QUZQrX1rbumLcxKTi1r2wOMOboPy9FVRKLD8xr9U56GIyzUyjptnNZc5kmAf3Ix6wnp2aQhq6rWvNSKsyR0Wih_uAYv0BIo5R48VH5no7zTSzI2YgCnxDJm7tsUzqg-lrSrQsZglNw_Owq7jRowwtfaHOLv6x835oTimhi8pgYFDIimUWqhJ3dcEyr1GRS6OAYvvKpHHaUt5shB3QS8EoRphBhRkunpF5ijVs7I-iB6I7twCah-zW2yFPV7c7LZTGaHAWG229uG9JE8zrBYXDuQ4NWrvL6GKT9WW3d3cNNwwq4atj-Bt16YBX0D79XP33maY3vGlOXCU3-xgPqz2x6qH8DcrePcGEt_idHZsNBk4HyfgKyDAllCnU84h1cL0UdftHvgv_VofqwfexcXsjPAyJ5WSM7_4Gs0zZqUl_DS111Sgc3Mhuvwc26IPmVzDzQX-KpmNTFeElf40MvxVmeWyVz1VjbDHYkF7mnyprbTZBp18-ZPKoBo0bVEIovBThCcJOi9ozP_YlwrxJuszYj8pktrxs0-dVIpn1aHt4YoZGhHPLejK50sxt5irKJ4unQbJPFzqGVPPMQA3xmAQWw6JdoKF_QFrDN-k0Rr9eS5_0ti3NI9KJLbZ0dS0dfNOh9Vgb1OyrknzPUXHYo4M4sm5-ipJCk6xPkI2UZr-pwQ9ZtF_pG0bkIAyfzNG_Xma4NeMSX9YE7aEPDY9KCNFm5FWGlZuWQEr5NFBFSvRxRIyvPXZqo57zljhdL-uVc4eKEbbmw6eI5Xb-r04zIkM4xITIYr_yLRArsxWMgFQOSvwfLl6soz5bGIIxHVNUm0wc87ERa6t_v7kf92F19lHUqSPqb_2Y-rYwhX93X5PxZ48cFwjICXkqJr-3V2HKA0448dBzZkdBZz7FfyW7XcQJtZ8mYBaaHkQxGWPw3s_Lbws2dlDVbTnCaLP3zpMhK-ttoTGJ-3gZMp21bdOUazpZODYbio2hEUNo_Hjf-W5-cQBQyqazUIJ8KEvEm2nCYZPqTmApHw6KhMfMxFCpZiVT-DIPtxAU_1m_8-oc8N8aSjYi-KAk6HGgGAZ6US8XGG2f1BMFpa3R9OZNKgWJ972_qq_JRec7Bjs356T4u5gX-92RaMG8fyrKcILtOxtNtTKwvofidA6zjl8tDjO7LVC8AhmcdfDpgVaeW1pFru9SXLY97EuI4I_PDpwB0MHTLm5Bs2e5IQApCNiO4y5Ta_8UyO3bUDi5jORt2dzakTOgdLYhcEcYxbUCl5S5ITQIuEp0-dvUcy8RUtRpkrXomWxRKkFdMZ3n_1Lafmp3NFUI8yfYwq2OWKsChyMAZL_mMSDlIZGobszb0CvNAqPZWQnbBnbInFOhsk6T2yCDwHl0XVztK4soSsZc4ZCgLykDM9GImizXH52Iw_MdWng5jrAe5yPQW5aiP5QZcrmB3BAT16-i8WmhfuWVaRYb2v1TkUAetKDcO_aYSo3PPPbrOk5vMIuCAi8Pf8SwepehuRjRORU8eyNRSE5aK1UhXp9e9G26liKzyNPxquknL6Cg3NqCOo3aApCfDYqMefDYpEKnpCSCoCxRz3QJlMLYDCvuJBGYwPetCXSGZs9pPYdVREjnUcIJzUZjRnVfjqBg7GekRwgKz8vWM0cMCBziaA6TjkNvaHTS6olxzq4_9kuFiRfrbDfn80jiim2wRu1EZ1SIBmE8ywaO_7mJrxOBDBbp1NyjBbfhUF-5enysp2nA0HkaoWn01gd1qlbrfZwLuKzXVUA-TDPHkHKgxte2NGghzPHMU-FL4SGDCRePXWbNEmteRpjsjTCeLGcZj5An1zwslTmaxoBiePD7Z&cid=CAASEuRoInWyO5FNzMAAiN9HPYsVaw&rfl=1%2Chttps%253A%252F%252Fwww.basketball-reference.com%252Fleagues%252FNBA_2021_per_game.html%240, line 1: SyntaxError: invalid escape sequence
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614736582426	geckodriver	INFO	Listening on 127.0.0.1:42583
+1614736582429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLYJ6ay"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614736583960	Marionette	INFO	Listening on port 33889
+1614736584052	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614736584062	Marionette	ERROR	[18] No reply from Marionette:Register
+console.info: MINT: main/search-config update being skipped
+1614736680585	Marionette	INFO	Stopped listening on port 33889
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614736888925	geckodriver	INFO	Listening on 127.0.0.1:38513
+1614736888930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3BVcyr"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614736890347	Marionette	INFO	Listening on port 42805
+console.info: MINT: Loading search-config defaults.
+1614736890451	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614736890460	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://s0.2mdn.net/9129572/1611235384950/CV~SBINTERNET_CM~THRVONSPDINT_MG~CHKSPDS_CS~300X250_CT~HTML5/CV~SBINTERNET_CM~THRVONSPDINT_MG~CHKSPDS_CS~300X250_CT~HTML5.js, line 774: TypeError: this.clicktagBtn2 is undefined
+1614737025607	geckodriver	INFO	Listening on 127.0.0.1:40729
+1614737025609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileH5GEk4"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737027187	Marionette	INFO	Listening on port 33877
+1614737027237	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737027253	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: https://cdn.doubleverify.com/dv-measurements991.js, line 1: TypeError: n.WindowAdaptor.workingDocument() is undefined
+JavaScript error: resource://devtools/client/jsonview/Sniffer.jsm, line 56: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: https://cdn.doubleverify.com/dv-measurements991.js, line 1: TypeError: n.WindowAdaptor.workingDocument() is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1614737146805	geckodriver	INFO	Listening on 127.0.0.1:33465
+1614737146809	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFlzUSg"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737148550	Marionette	INFO	Listening on port 39447
+1614737148636	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737148649	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: main/search-config update being skipped
+1614737198704	geckodriver	INFO	Listening on 127.0.0.1:48841
+1614737198709	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXnGx6F"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737200446	Marionette	INFO	Listening on port 42693
+1614737200541	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737200556	Marionette	ERROR	[15] No reply from Marionette:Register
+1614737206901	Marionette	ERROR	[31] No reply from Marionette:Register
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1614737233541	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/domwalker25, type cancelPick failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\ncancelPick@resource://devtools/client/fronts/walker.js:546:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_onInspectorFrontDestroyed@resource://devtools/client/inspector/node-picker.js:112:18\n_emit@resource://devtools/shared/event-emitter.js:226:34\nemit@resource://devtools/shared/event-emitter.js:172:18\nemit@resource://devtools/shared/event-emitter.js:324:18\nunmanage@resource://devtools/shared/protocol/Front.js:168:37\ndestroy@resource://devtools/shared/protocol/Pool.js:167:14\nbaseFrontClassDestroy@resource://devtools/shared/protocol/Front.js:103:13\ndestroy@resource://devtools/shared/protocol/Front.js:67:10\ndestroy@resource://devtools/client/fronts/inspector.js:91:11\n_destroyTarget@resource://devtools/client/fronts/targets/target-mixin.js:603:17\n", "resource://devtools/shared/protocol/Front.js", 99))
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileFlzUSg/protections.sqlite
+1614737237433	Marionette	INFO	Stopped listening on port 39447
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilexQdWKV/protections.sqlite
+1614737240266	Marionette	INFO	Stopped listening on port 42267
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilejweSxR/protections.sqlite
+1614737240625	Marionette	INFO	Stopped listening on port 33683
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile3BVcyr/protections.sqlite
+1614737241048	Marionette	INFO	Stopped listening on port 42805
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileH5GEk4/protections.sqlite
+1614737241358	Marionette	INFO	Stopped listening on port 33877
+1614737321038	geckodriver	INFO	Listening on 127.0.0.1:52279
+1614737321043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuRomTy"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737322590	Marionette	INFO	Listening on port 36171
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737322687	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737322698	Marionette	ERROR	[18] No reply from Marionette:Register
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2241))
+console.error: "Error sending event: display-change"
+console.error: ({})
+[Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIEventListenerService.getListenerInfoFor]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://devtools/server/actors/inspector/event-collector.js :: getDOMListeners :: line 266"  data: no]: getDOMListeners@resource://devtools/server/actors/inspector/event-collector.js:266:22
+getListeners@resource://devtools/server/actors/inspector/event-collector.js:334:28
+hasListeners@resource://devtools/server/actors/inspector/event-collector.js:227:17
+hasEventListeners@resource://devtools/server/actors/inspector/event-collector.js:800:21
+get _hasEventListeners@resource://devtools/server/actors/inspector/node.js:383:33
+form@resource://devtools/server/actors/inspector/node.js:207:7
+write@resource://devtools/shared/protocol/types.js:358:32
+types.addArrayType/write/<@resource://devtools/shared/protocol/types.js:215:33
+write@resource://devtools/shared/protocol/types.js:215:16
+write@resource://devtools/shared/protocol/Request.js:109:22
+write@resource://devtools/shared/protocol/Request.js:39:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_onReflows@resource://devtools/server/actors/inspector/walker.js:587:12
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_startEventLoop@resource://devtools/server/actors/reflow.js:314:12
+notify@resource://gre/modules/Timer.jsm:62:17
+
+console.error: "Error while calling actor 'layout's method 'getGrids'" "node is null"
+console.error: "getGrids@resource://devtools/server/actors/layout.js:502:26\ngetGrids@resource://devtools/server/actors/layout.js:507:43\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+console.error: "Error while calling actor 'layout's method 'getGrids'" "node is null"
+console.error: "getGrids@resource://devtools/server/actors/layout.js:502:26\ngetGrids@resource://devtools/server/actors/layout.js:507:43\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737434040	geckodriver	INFO	Listening on 127.0.0.1:55157
+1614737434045	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMNtlJV"
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737435660	Marionette	INFO	Listening on port 42535
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737435792	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737435804	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+console.info: MINT: main/search-config update being skipped
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737571063	geckodriver	INFO	Listening on 127.0.0.1:50423
+1614737571066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilex9kd8U"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737572635	Marionette	INFO	Listening on port 41147
+1614737572692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737572701	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.info: MINT: main/search-config update being skipped
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737663931	geckodriver	INFO	Listening on 127.0.0.1:41291
+1614737663936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXE7PUb"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614737665330	Marionette	INFO	Listening on port 44603
+console.info: MINT: Loading search-config defaults.
+1614737665352	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737665360	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737692689	geckodriver	INFO	Listening on 127.0.0.1:49221
+1614737692693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQFxc3v"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737694263	Marionette	INFO	Listening on port 41653
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737694313	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737694323	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+console.info: MINT: main/search-config update being skipped
+JavaScript error: https://cdn.doubleverify.com/dv-measurements991.js, line 1: TypeError: n.WindowAdaptor.workingDocument() is undefined
+JavaScript error: https://s0.2mdn.net/10514328/1613073508742/db16d62eb5eec7b75d78ff5e8e12e0c7.js, line 1: NS_ERROR_UNEXPECTED: 
+1614737732464	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/581490/52386554/xbbe/creative/adj?p=APEucNX1JcGAzT9vwBNBCYoMzZjuE5Pj5OZDK4WTV6Zz-W0FkVA6np4&d=CnkAoCZ_4HT25yY_0zeuTDNvobQl7IlfHmeRv15NAhWF8L3fZDEUvqFachfYsLBrprKDmzg0lVOg4yN8jpswzs9GFkPoGGvi4o-0ZLZwT2yAZaIpzROv1cgbr1ZD3hzJgXSPdyHdN1iRXFG6NoU7FNn4CS1U8VXTPJV6EvkRAKAmf-BQXAEn8Q5CeHNlk47wo06OmLimWa5fhCYAgWRak-16ODEyFKvujJw1NZdujYb_i3sUsRXNiiMAaGzcGNcqYzNp8_ClVVkWxQ-7j5eel15AloKkVSjuTrOEFz2vt8Hq8U7ievYm0UkRF9at69iTpu4llyiwCqik5oRaxcfzqDUshgmsH0xurXTR4eGanijxKEGyWlNQvpH0Tp2hB3s-40bhqz5oQAsuLAn2RGsxpOo0iMQkTlqI8PAaUQHOmRK794aOhp65GsbJRX7GYUSsgn9NVYS-mfDUFUw87RbHr3cjdFeuh9jd-tZ5gqYnAyHLUC38gCS3sf6bzo_25B6UlLqD0galxDxneMq_40DfpWvSqwglgYAgPEW9SKGpwHswEvewFH8HX6KDU3tZbN9oJsOpLmNKDVkf2BT-HQP1erlwXf_crWBV2X5PKBL_4pllcqPpwDdc9feZKSTiHloM6-9mn9NJuxYJYrRsssvjuK-YCOHpm_dSOBHyoK82-oCENivqGhCIPLdC9mObef37bxbF988sdY_xdVzB_1wOBdL6yI7CzuyridMotgnVgLQRs7r7jc6vjUQM4pQtDFo_Qt6GhEXQbIZZ3wIPNUGMmMhRcRNTGU7txJxOYQDm2TCv1x06mea2UQ-L6ltNEunX-SwQkUS1YV4T-rSrfEipdpBp1IdQYfiO9LosrcRylbO9hHcNjZbZ8KkC7SDTbl38hfePVB5HqZCQCZkTTdt3ZPaYXUGc6SxCkEpoD7EQ-uXUYCGk24c2IvN-HEn2x7AKDMUg4jq4wiTbC7MOZVqQNeSzQFiVtRAIgJfQpJJHLUN-UufqPrk23mguUWkhxekbo7RTY-_b29cVzCRWzffPny5ylOwi97pM-6sDGvyqxmj9CCaRcbMxwcG6DW9xZfLM-5umFwefrmJdETFCzw4u6XbYdToHTwNrYea3kzKEAw6T2A_Q29ixm05nl-VN3KYIcRasLe9OTloJa2inqJgG4X8rEp8AsN1aDgxFbxk09KNgl_Gew9Gbf-NftTYHztl2X5p5ljMFaDfK9_5kWQtbeD3XrN_4UbMZGSiz3xZYsD6H29OXs3nfOvO8YRsaD-US4mWHHcIN1tj0F4RpKcM7hx5m29UZ-g49JkfHxu3pvzj3_tJl8ppz965RGiJ_x2_K_VNabAtOzFVEGUGeF-SexsZ0YsMbL5fixn8qS3TTCe0GTMIamnSkEaAAHwVtVwi3x1z_Imdajlj9VTDbfh8tESqg00HWgKR7NBkD7pwso2G5YmwCYM-R-tWWtOBXiv3sYGt2K7Svei3lh34CSf8PmoN1-gzO2dXfZ8SX42PPCKhwaIAV4ATEfSwvUR5zQE4gPkBnSYzyPGofCU0PU9xVPbRvVscjPyiyj1tv9JTrl_3dVvmvJluk1ZPwTgoL92quYDMa9HMSeHm2cfJQF19CFNRYhYy93S_KYXxgoC3nmJK-GT7HySA2TjI9VHBjeypD4NzXxKg3vsEN-nbehzNVbdQfW_2fUCJ-BG3c3Eqe0jk-d6-ZHhI8XzHuc2uo_wTZYCwDGhcoKr0ujhuyOKS0FZbJs5eUimy0vyDpcPbGuzrsjmQpV3M4s0zrpvzAIsY7Zu_ssTdoQey4EPSMRpeypXqJavo_yuHCo7dz8ysnWn8GaS8Rza0XeKXFcjzsASY844CK3K0VASH31u4lFiB2lwma3RRZ58efc4i-diIba1Vb0JIp9Bbji-v51k3jq97T3wjUws7GBONesrphmDvg5wxEsz_IadYvTunCNSt2AtBXTxsXtwZCTrRUkG17ZdNudHqtDjcgK2A96KQDbpE_IYVNGc0a12SbCUgRBc-_QBo0c9otguoLHQVEZR_pFBHBoR38NQHuNu_McDAJ28OfX5Vmjjt401D3kpFZi8PObLmBX16uJC-Ay3M_XUXZpgttM0mTVn71z4FvZqTaCdYYra5x5Zf1nsuAchekRiejSTFPI8Pow3YNyTrmoS_AqoZ_dn_uyRxkDxDn08woMN1-txu0uG6ZoLYZ5lBT7XJ-o2pjehAIkjl067b8Za6X-T2eGDK5pHq6i7G-SuUuk06igrIYTWY2muuqZmNgyvgc0JiA-N3rxLEY717eQnfHximuZLPf_wjPYTobcI0SJ8UzDAn920hW62nmXcVnYHJCIm0d1OByLCkrEurr7i6LQipPPcR8DHm6XLQnY9hBr6lBHFykWzlsFSctnBOtBbrSHcc0tgdQm5ZejJ6dPB5t2hVv8SabJWSCP46qvAxdzZv-yeSwZiynG2qMva8A8VQkcEgCpGwB6oNU91qTIMgmGoietmAba90iJG20DrFvoFz5MbAXThtHPZlqxeHm4LX2mBIn-fgcc-iAft8DglurHbvfvE4V22Z7EmqrBKUs_ul7jld8uLnMdEsZgVgoP9MkQUDm-Kh2yKLKwhac57ohyC55x4-cNRykArKAfjDl9I0pIH1L88rKHZ3Nbwqio4UZe6G5LVYlMs72OK5fdAtRdHfaHIz1NHlJfxPuozXpo3Xbf0AhYOk0CtF4Xfg23LUNn9SG2QV4dxhqJ1rSPPf-ubsNfZDq_dGcblgTal62hi4r9fq6VFmlUiyWU9QtdnVga_Uq_uI4iBVcbr4qosxClbWFWNFCvb6DSU3YUecpQjM7EQNccPEm2IFxfDORgQtvVPvUlYx1KBxgA08A98WaXhTbBo2o0Imm8oJ-56lgAuyOvkFwpHeEMsiNAT_4FMWKxe5cbb_Au75jkhJAgPbQQ2mqX6AyayRgoekFa3fhF02VXr7-VZToEofQ2bJri6yFYHgWWt3uzvrv9pnr4TQWzMSPXKO2vpueMYeQaVK4TP2Q27rv_iy5uR0PRHB_j4uQonavJBA98puneAd5_31OX3Q_9zFi2lH39CGIyc6dNiT5fnjFJ7d9pD6dGFOoDIe_vTGOHois3vtNxS-6JBORzx9C_zAsrm6-rUKoDzYCwhZVzg_20_oXsYuZBmqa5B5GAR7FuaGVf-qWDVn46d6E_8MtwgbH3M3ajRPn8mvzHpdmO6bCMO4SgeEaFggAEhLkaElKzHEFtShISB9s9O0Yp_hgAQ, line 1069: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1885: TypeError: can't access dead object
+1614737740833	geckodriver	INFO	Listening on 127.0.0.1:37595
+1614737740838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexiwuvH"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614737742355	Marionette	INFO	Listening on port 35813
+1614737742475	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737742486	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/domwalker30, type cancelPick failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\ncancelPick@resource://devtools/client/fronts/walker.js:546:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_onInspectorFrontDestroyed@resource://devtools/client/inspector/node-picker.js:112:18\n_emit@resource://devtools/shared/event-emitter.js:226:34\nemit@resource://devtools/shared/event-emitter.js:172:18\nemit@resource://devtools/shared/event-emitter.js:324:18\nunmanage@resource://devtools/shared/protocol/Front.js:168:37\ndestroy@resource://devtools/shared/protocol/Pool.js:167:14\nbaseFrontClassDestroy@resource://devtools/shared/protocol/Front.js:103:13\ndestroy@resource://devtools/shared/protocol/Front.js:67:10\ndestroy@resource://devtools/client/fronts/inspector.js:91:11\n_destroyTarget@resource://devtools/client/fronts/targets/target-mixin.js:603:17\n", "resource://devtools/shared/protocol/Front.js", 99))
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileXnGx6F/protections.sqlite
+1614737744164	Marionette	INFO	Stopped listening on port 42693
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+1614737744814	Marionette	INFO	Stopped listening on port 42535
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilex9kd8U/protections.sqlite
+1614737745124	Marionette	INFO	Stopped listening on port 41147
+1614737745558	Marionette	INFO	Stopped listening on port 36171
+1614737745592	Marionette	INFO	Stopped listening on port 44603
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileQFxc3v/protections.sqlite
+1614737745991	Marionette	INFO	Stopped listening on port 41653
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/581490/52386554/xbbe/creative/adj?p=APEucNX1JcGAzT9vwBNBCYoMzZjuE5Pj5OZDK4WTV6Zz-W0FkVA6np4&d=CnkAoCZ_4BSAwIdOQCrAWcD7VMtf-9BLZ-HhcukZecyXbS0JCe7MkDGN0l_4TqmAWtoGuJurOfpCuK3aQsn1TeU1W3T5XznYUMdhupfRxjHblAWkbhkz2xsNsQtXr-QwZDzDvbUhLUHjVmAJHk_RBOnrk0k5txS69b2VEvkRAKAmf-DH9GWWPuQRismZYCMpGT3aUM5-rNNbUsKh1Lgz4vRdW2cC150jJxMRGsFyKtVvcPhf88hg3d5K4DbiZRSg9nVFA4L8fkl3vIsKKYAN8oDqecOl3O3U8QFXXZwpzbw2rR6I3_bTLpXHPBubsAIanqlmhyRnq5AHd9Ll5eQ3MCvZ1WMXfFZ6QG2G_6luQlqEqxKF54gAENCv6Dw3yaZ__KYv2eBAzSyc2i_wAsFNOo1CW6S4xYZLTMiJTZVwtgiDE4b2Ss0-TyAjLHm399DEruh-nxJ_-U7FRn8r4EBa8gLdlePUZJf-wkuw8GacOMBUb-K3uPNee1V9U3vJfK_9zQhrLleAHkCIbLTpTOSk1dKGcFrcfRtLpIAmVkdZwkky7ie1XIEaFOIJ_8AXDJqhqyrS9Na0sEkmFVDWEzRfPKTZqBtR1zxcP0asmOQv0RAbzXqcdUgiXIqFRQHZcBxY_-7LnH8WY7lSJA-THGK_zIH_rP05mSXklmGGlioMe9fNJhKHOkSG8vVYl9CjZqs4OoX5DuqTFELxrajV9KX7vD6CwHXotsLaibqytja2mPlUYqa8Xg-CAtqcdqBsgOuNnOWRLCKy_D87L5J9R8xJeTsaCjy1K5Adi85Z3etWUQECbQpeODFM5wc7j1qIRY5kcKZ18zVTg64m8miTNJ4sllfaoe5QeSZEMbz1XWFOcGwJEBNPcbViWWH3rSg4JC6wLuxRpSr4S3nFbyLf6A4pmA-co35UdQmyDaJtiOFLRX08v-2TGfKKPa6yuoWooWFTU-qfvqPCk0rUfh5_2OoHawK-3ONech0m1-7wcb2Jvd71_xrazZLa-NGhxgnm_x_0tdTy-eOBbG5MCKK8830qjPs65toOjdFPKaxy5uNBf3cGSfbxq7_V3xf3Rlliem8vp9-qEFvzJU0Y1otPG6cjZArzqyFOtHOBmKrBVgM0Ql2puRpgnOxs-bYMRc_S_29FVDUxqJ3ranb-WNYF9rJXchcPom1tLqtwxRq5si9uorHaA3N5hAz1G7V-rD2DRSNtAs3OIszJHCXzjnH-3jiDgKumdWYKx5ytz0D1Zvty81DahbcMEhcUFnBQRTBqVy2mdoJPUO_IG7K3aj3kNgljccosQ3l-iVrzdMY_KzLQPdbp06gqYdHTLc1MASOIuRJ0_K9ZH6oBFP0BAlnW1THk3wrSxx6vbTCDYzzWgk4hR0GRuRsSd2DOh9_P5eIIKHE1-wrUi4Jawn0Onl3PuqAk8pXN8MtQc3_h7D5At6fTA_o6Sw99hU4-GYFBNlYybbamjTtpmjGmLBSGQwXsv-xeUXoAdvuUxd16EH2tS56lsFtnY9mzU3IF5MWWxuUm-_QkrfO2QEnNc67l7Q6Q4HcSGDxGjZGY09rIbuMRT_b2q1axv_L3hNwed7puBc9fj2r7OO5zRrjDtT6Q0X9YHAXfAol49zJygz2LHSfTDAxI9kDR_YIbfm9XmtJaRh-jYklthVepV64qtw2cHNV_oIfTGWQ-XvTEHYAvYZmTu_SQQisv2x89tZkPI8djJqQi-ZMHhz7EmabQBcfOnR9ukLfZPTn5F1WThHtmGssa36UfxsDGx8KJ7UHJwMiK-OELGa7bDW44p7acs-rAOjdYkGE8Ch3oFG3PsT1CrF1ZcZg4ED-fvjKHlP2exy_fdwbVNy-_ZpjXq8_L0L685228KCvtAa40XWrMSwRXFrYIHVVzG7StTlDcXg-xu1nRsIND-TuLHuUy0-BNBdYHus6lTYvEqMvEI2pPNfqCVI2MG69chdHJ_aIUUVlWHcgshe5oVY-s8WIJ5CK4REXfllGsDJl1LwUcH2udJD0s19JqeTyKjC4FfSjIrwEkNzzxIAbHLc4WI29bIjKlHeUNkdQFpW06NEV2sIOvsfNwJMxsToIk3w5S8j3tR0WyuNJR5aZbKjtpT8lyjtXsNO4-GJQuTxlaRf6Jkzphmm6HwXoSVLM3j6LbMltf5fpxINS7rHb5U2CJayKLrU0cTb-9OKG9qzgRpaN2FiBWANgDmIQmSRZDiWbdosuFs4x3rqHOrFeT1aJEdL9ZKE1-iMYzT44rIuc26Sx9V-SNLxZ5rxizTeF_FZTohT8sCnPHnOlkcVtYtY03fPLVgeA1xO4yNk7fx2teg8b899ah1YuI1gpaCeU1-Avd0lPnPaPa-AQXNcvE_LzEg0sPqg17T8XQSnHz-FFRHbLxlrUEylTSFY1xeNcyPlX165m9KIJS_srH865GzuFt0XKFZBZ3ouWwrL40bWGmxU4gzBhmIBqpwo0qY4ncrh-nrHqBgj3IOyR9MMkxeVr5-pU9pi2udIuZOXfUGbIDieZNvV_7YFEWKoWD8FiytZaGvsTs5URlylhb_FZMA6P-TkcSj6hlj7NMX0GwsbIRC73bABY1l-KnFBssSdBTeyKdds2QTj_fnL5_95M-HB3LNyOATcLckIkVl7PyybdLSEFuGHRv4xNQ0V_YD5ooohTbVHY5k_FoGFJeqOTuAhHFxljEicYucvAOAP0Ssao6TUYBVTZzRDokidphAnbwKvun9qa0r6X7cl7SYXvnJsbxU-UyOlHVJrRj3KLQSguVcxpLFzcaqRAZD5WWciQzfrTCP0t-ehe2ccNhaqWA8fffWDLDqBeAHuws-05LowSLKtXPRiWiQuYp3BnMSnaSEk1KXQBs6CUaYSaY3S7xjV8VrPm2ZHoDCSCrZDgyyD2Zkj-cFBH2N5KbWmyOE7N0M54N10ZiXIy6hE5HVvPK-FV0cfY0M70x_jnLUYaol4utJVZx4uLlV0jq2D1Kx5XuEMamX56LZv6dPp0KJfdaoAthOwxNEzS9N4jVobungYuwAREc2AukfPK-4tLWWdSJHNWOVz77mWoYeLHiKud7zKZeFoi7YmcV5HK8yJNbVUMy4jFffqaZvWiQNvG5M_Q7cWU9LLgVimoZLUxRwam7QxUCyyslKnxyx3oth2IkfkmEMvyI3pMyRmZR1S4K4i2IuQClc_aQUsqzpBrAX6SiGx5sAY6x7onYCPEYskpdONCG8FKsRf4j5AUaFggAEhLkaA177y240K2fzZoBxqog9LxgAQ, line 1014: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://0304e7bdc5c8b87405a8a1b34ef131c1.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html line 1 > injectedScript, line 1: NS_ERROR_NOT_INITIALIZED: 
+1614737760800	Marionette	INFO	Stopped listening on port 35813
+1614737771237	geckodriver	INFO	Listening on 127.0.0.1:40053
+1614737771241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledjXvsp"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737772776	Marionette	INFO	Listening on port 41667
+1614737772862	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737772875	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737823169	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614737823175	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614737885862	geckodriver	INFO	Listening on 127.0.0.1:33659
+1614737885865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile66piAa"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614737887387	Marionette	INFO	Listening on port 37325
+1614737887487	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737887496	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737905353	Marionette	INFO	Stopped listening on port 37325
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiledjXvsp/protections.sqlite
+1614737908533	Marionette	INFO	Stopped listening on port 41667
+1614737950338	geckodriver	INFO	Listening on 127.0.0.1:41907
+1614737950341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletZAriz"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614737951803	Marionette	INFO	Listening on port 46703
+1614737951864	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614737951874	Marionette	ERROR	[15] No reply from Marionette:Register
+1614738016113	geckodriver	INFO	Listening on 127.0.0.1:38915
+1614738016116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqQ91jJ"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614738017588	Marionette	INFO	Listening on port 43699
+1614738017636	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614738017645	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://s0.2mdn.net/9129572/1611235401576/CV~SBINTERNET_CM~THRVONSPDINT_MG~CHKSPDS_CS~728X90_CT~HTML5/CV~SBINTERNET_CM~THRVONSPDINT_MG~CHKSPDS_CS~728X90_CT~HTML5.js, line 776: TypeError: this.clicktagBtn2 is undefined
+1614738025536	Marionette	INFO	Stopped listening on port 43699
+JavaScript error: , line 0: uncaught exception: undefined
+1614738050286	geckodriver	INFO	Listening on 127.0.0.1:58415
+1614738050290	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePB0i9Y"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614738051859	Marionette	INFO	Listening on port 43439
+1614738051911	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614738051921	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614738054005	Marionette	INFO	Stopped listening on port 43439
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilePB0i9Y/protections.sqlite
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614738510516	geckodriver	INFO	Listening on 127.0.0.1:38371
+1614738510520	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMQbvOr"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614738511890	Marionette	INFO	Listening on port 46803
+console.info: MINT: Loading search-config defaults.
+1614738511941	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614738511951	Marionette	ERROR	[15] No reply from Marionette:Register
+1614738511952	geckodriver	INFO	Listening on 127.0.0.1:46125
+1614738511954	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYTN8Lp"
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614738513445	Marionette	INFO	Listening on port 33951
+1614738513473	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614738513480	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614738533995	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614738534325	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: uncaught exception: undefined
+1614738650904	Marionette	INFO	Stopped listening on port 46803
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1614739103456	Marionette	INFO	Stopped listening on port 33951
+1614739247437	geckodriver	INFO	Listening on 127.0.0.1:58547
+1614739247442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7GQLca"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614739248881	Marionette	INFO	Listening on port 41981
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614739248965	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739248976	Marionette	ERROR	[15] No reply from Marionette:Register
+1614739248985	geckodriver	INFO	Listening on 127.0.0.1:34031
+1614739248987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejmNTsq"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614739250491	Marionette	INFO	Listening on port 38967
+1614739250606	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739250615	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: https://picks.nba.com/primetime-picks/how-to-play line 1 > injectedScript, line 4: TypeError: googletag.pubads is not a function
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2373 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.message.8af80661fd8e8289bbaa.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 6593 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-follow.bdcbf0a0d6df38a9c90a.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8480 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-video-modal.b10d6b595491558bc9b7.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3070 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-slideshow.f1271cc40ae649705141.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3276 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.SidekickWrapper.3e24a420871454d6ebab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3072 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-service-storylines.4107e398664b454dead5.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1583 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-video.85b6db5cedb6aff58852.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8097 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.95ddfb672d7cf8ff1f7c.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3563 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.CanvasStickyShareButtons.aa9ff7e4f1fdf3044840.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3421 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/td-service-canvas.8188c8f6d84c17ccb422.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7330 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.8643e110a8f87ca78a4f.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 4015 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-sports-promos.7e970d67552cde4df9b8.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1292 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-adblock-promo.af2d3c9c674565ceca77.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2019 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-livecoverage.401f79609e6a8fe7eed6.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 147 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.6f78796c474011299212.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2806 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.UnifiedModalLayout.804b7ac4e87b1aad5958.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3459 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-stream.b7675fb05aeb738778a9.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7818 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-page-transition.ab2c6a2c97a41b7377ab.min.js)
+1614739340522	Marionette	INFO	Stopped listening on port 41981
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5C000A,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+console.info: MINT: main/search-config update being skipped
+1614739601555	geckodriver	INFO	Listening on 127.0.0.1:47709
+1614739601559	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEn72bT"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614739603043	Marionette	INFO	Listening on port 32769
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614739603084	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739603092	Marionette	ERROR	[15] No reply from Marionette:Register
+1614739603097	geckodriver	INFO	Listening on 127.0.0.1:35091
+1614739604101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2oGuqF"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614739605550	Marionette	INFO	Listening on port 37267
+1614739605624	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739605634	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1614739652032	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614739688301	geckodriver	INFO	Listening on 127.0.0.1:52949
+1614739688305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNiy9sa"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614739689850	Marionette	INFO	Listening on port 37821
+1614739689927	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739689936	Marionette	ERROR	[15] No reply from Marionette:Register
+1614739689943	geckodriver	INFO	Listening on 127.0.0.1:42963
+1614739689945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiley7OYLO"
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614739691411	Marionette	INFO	Listening on port 36249
+1614739691467	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739691476	Marionette	ERROR	[15] No reply from Marionette:Register
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2019 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-livecoverage.401f79609e6a8fe7eed6.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3459 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-stream.b7675fb05aeb738778a9.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 4015 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-sports-promos.7e970d67552cde4df9b8.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 6593 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-follow.bdcbf0a0d6df38a9c90a.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3276 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.SidekickWrapper.3e24a420871454d6ebab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 147 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.6f78796c474011299212.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7818 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-page-transition.ab2c6a2c97a41b7377ab.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3070 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-slideshow.f1271cc40ae649705141.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3563 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.CanvasStickyShareButtons.aa9ff7e4f1fdf3044840.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2806 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.UnifiedModalLayout.804b7ac4e87b1aad5958.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1583 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-video.85b6db5cedb6aff58852.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3072 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-service-storylines.4107e398664b454dead5.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 1292 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/react-adblock-promo.af2d3c9c674565ceca77.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 2373 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-canvass.message.8af80661fd8e8289bbaa.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8097 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-content-canvas.95ddfb672d7cf8ff1f7c.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 3421 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/td-service-canvas.8188c8f6d84c17ccb422.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 8480 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-video-modal.b10d6b595491558bc9b7.min.js)
+JavaScript error: https://s.yimg.com/xe/tdv2-sports-site/js/main.ebe8459ef31a6bf2412e.min.js, line 2: ChunkLoadError: Loading chunk 7330 failed.
+(error: https://s.yimg.com/xe/tdv2-sports-site/js/tdv2-applet-swisschamp.8643e110a8f87ca78a4f.min.js)
+1614739771521	geckodriver	INFO	Listening on 127.0.0.1:54145
+1614739771527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile65MPTQ"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614739773122	Marionette	INFO	Listening on port 33059
+1614739773142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739773156	Marionette	ERROR	[15] No reply from Marionette:Register
+1614739773167	geckodriver	INFO	Listening on 127.0.0.1:58287
+1614739773170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaTQFMx"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614739774778	Marionette	INFO	Listening on port 38205
+1614739774895	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614739774909	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://static.adsafeprotected.com/main.gr.19.8.168.js, line 108: NS_ERROR_FAILURE: 
+1614739803601	Marionette	INFO	Stopped listening on port 33059
+JavaScript error: https://tpc.googlesyndication.com/sodar/sodar2.js, line 25: NotFoundError: Node.removeChild: The node to be removed is not a child of this node
+console.info: MINT: main/search-config update being skipped
+console.info: MINT: main/search-config update being skipped
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileaTQFMx/protections.sqlite
+1614739929170	Marionette	INFO	Stopped listening on port 38205
+console.info: MINT: main/search-config update being skipped
+console.info: MINT: main/search-config update being skipped
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://cdn.ampproject.org/rtv/012101070013000/amp4ads-v0.mjs, line 2: Error: Failed to load: https://s0.2mdn.net/simgad/6674743128197481336​​​
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://s0.2mdn.net/1420759/1614300567623/pp_iac_AMu_CoR_RichFill_CNPBd25s150k_DYK_DynDt_MilDLaiCP_0221_300x250cH5.js, line 771: TypeError: root.anim.fill is undefined
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiletZAriz/protections.sqlite
+1614740515294	Marionette	INFO	Stopped listening on port 46703
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilejmNTsq/protections.sqlite
+1614740515606	Marionette	INFO	Stopped listening on port 38967
+1614740516085	Marionette	INFO	Stopped listening on port 32769
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile2oGuqF/protections.sqlite
+1614740516369	Marionette	INFO	Stopped listening on port 37267
+1614740516608	Marionette	INFO	Stopped listening on port 37821
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiley7OYLO/protections.sqlite
+1614740517116	Marionette	INFO	Stopped listening on port 36249
