@@ -74,7 +74,7 @@ def create_question_cards(soup):
     find_cards = soup.find_all('div', attrs={'class': 'PrimetimePicksMatchupstyled__PtpCardContainer-tdtza-0 fLNWPg'})
 
     # Create a list, each index is list of 2 teams and the question
-    teams_question_list = []
+    teams_and_q_list = []
     for index, card in enumerate(find_cards):
         current_matchup = []
         matchup = [logo.img['alt'] for logo in find_cards[index].find_all('div', attrs={
@@ -85,8 +85,8 @@ def create_question_cards(soup):
         question_text = find_cards[index].find('div', attrs={
             'class': 'PropCardstyled__QuestionText-sc-1nx4amu-3 ivUoYa'}).text.strip()
         temp = [current_matchup, question_text]
-        teams_question_list.append(temp)
-    return teams_question_list
+        teams_and_q_list.append(temp)
+    return teams_and_q_list
 
 
 def create_team_stats_df(soup):
@@ -131,13 +131,17 @@ def create_opp_stats_df(soup):
     return df_opp_per_game
 
 
-def retrieve_answers(cards):
-    for i, question in enumerate(cards):
-        if 'team' in question[1]:
-            stat = find_stat(question[1])  # Find the stat in the question text('rebound', 'assists')
-            cards[i].append(stat)
-        else:
-            cards[i].append('player')
+def retrieve_answers(cards, player_list):
+    for i, card in enumerate(cards):
+        stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
+        cards[i].append(stat)
+        players_in_question = []
+        if 'team' not in card[1]:
+            for player in player_list:
+                if player in card[1] and player not in players_in_question:
+                    players_in_question.append(player)
+            cards[i].append(players_in_question)
+
     return cards
 
 
@@ -294,30 +298,39 @@ def get_player_list(driver):
 
 
 def compare_player_stats(player, stat):
-    pass # TODO: Where I should start
-
+    if stat == '3-pointers':
+        pass
+    if stat == 'assists':
+        pass
+    if stat == 'rebounds':
+        pass
 def main():
     driver = webdriver.Firefox()
     driver.implicitly_wait(2)
     soup = open_pickem_browser(driver)
     cards = create_question_cards(soup)
+    print(cards)
     player_list = get_player_list(driver)
     vegas = get_vegas_lines(driver)
     soup = open_bball_ref_browser(driver)
     df_team_per_game = create_team_stats_df(soup)
     df_opp_per_game = create_opp_stats_df(soup)
-    retrieve_answers(cards)
+    retrieve_answers(cards, player_list)
 
-    for i, question in enumerate(cards):
-        if 'team' in question[1]:
-            print(f'Question {i + 1}: {question[1]}')
-            print(compare_teams_stat(question[0][0], question[0][1], question[2], df_team_per_game, df_opp_per_game,
+
+    # The final card format is [[team_1, team_2], question_text, relevant_stat, [player_1, player_2]]
+    # cards[i][3] only exists for player questions
+    for i, card in enumerate(cards):
+        if 'team' in card[1]:
+            print(f'Question {i + 1}: {card[1]}')
+            print(compare_teams_stat(card[0][0], card[0][1], card[2], df_team_per_game, df_opp_per_game,
                                      vegas))
         else:
-            print(f'Question {i + 1}: {question[1]}')
+            print(f'Question {i + 1}: {card[1]}')
             for player in player_list:
-                if player in question[1]:
-                    print(compare_player_stats(player, question[1])) # TODO: Where I finished
+                if player in card[1]:
+                    print(compare_player_stats(player, card[2]))
+
 
     driver.quit()
 

@@ -12,7 +12,7 @@ def find_stat(question):
         stat = 'block'
     elif 'field goal' in question:
         stat = 'field goal'
-    elif '3 pointers' in question:
+    elif '3 pointers' or '3-pointers' in question:
         stat = '3 pointers'
     elif 'free throws' in question:
         stat = 'free throws'
