@@ -34,32 +34,6 @@ def open_bball_ref_browser(driver):
     return soup
 
 
-def get_players_list():
-    timeout = 25
-    url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
-    driver = webdriver.Firefox()
-    driver.get(url)
-    html = driver.page_source
-    soup = BeautifulSoup(html, 'html.parser')
-
-    table = soup.find('table', attrs={'id': 'per_game_stats'})
-
-    cols = table.thead.find_all('th')
-    cols = [h.text.strip() for h in cols]
-    cols = cols[1:]
-
-    rows = table.find_all('tr')
-    rows = rows[1:]
-    player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
-
-    player_list = []
-    for i in range(len(player_stats)):
-        if len(player_stats[i]) > 1:
-            player_list.append(player_stats[i][0])
-
-    return player_list
-
-
 def get_vegas_lines(driver):
     url = "https://sports.yahoo.com/nba/odds/"
     driver.get(url)
@@ -93,6 +67,7 @@ def get_vegas_lines(driver):
     return vegas_dict
 
     driver.quit()
+
 
 def create_question_cards(soup):
     # Each "card" contains two teams, and a question pertaining to them
@@ -295,29 +270,54 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
     return stat_output
 
 
+def get_player_list(driver):
+    player_list = []
+    url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
+    driver.get(url)
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
+
+    table = soup.find('table', attrs={'id': 'per_game_stats'})
+
+    cols = table.thead.find_all('th')
+    cols = [h.text.strip() for h in cols]
+    cols = cols[1:]
+
+    rows = table.find_all('tr')
+    rows = rows[1:]
+    player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
+
+    for i in range(len(player_stats)):
+        if len(player_stats[i]) > 1:
+            player_list.append(player_stats[i][0])
+    return player_list
+
+
+def compare_player_stats():
+    pass
+
 def main():
     driver = webdriver.Firefox()
     driver.implicitly_wait(2)
-    player_list = get_players_list()
     soup = open_pickem_browser(driver)
     cards = create_question_cards(soup)
+    player_list = get_player_list(driver)
     vegas = get_vegas_lines(driver)
     soup = open_bball_ref_browser(driver)
     df_team_per_game = create_team_stats_df(soup)
     df_opp_per_game = create_opp_stats_df(soup)
     retrieve_answers(cards)
+
     for i, question in enumerate(cards):
         if 'team' in question[1]:
             print(f'Question {i + 1}: {question[1]}')
             print(compare_teams_stat(question[0][0], question[0][1], question[2], df_team_per_game, df_opp_per_game,
                                      vegas))
         else:
-            for i, player in enumerate(player_list):
+            print(f'Question {i + 1}: {question[1]}')
+            for player in player_list:
                 if player in question[1]:
-                    print(f'{question[1]}')
-                    print(player_list[i])
-
-
+                    print(player)
 
     driver.quit()
 
