@@ -293,8 +293,8 @@ def get_player_list(driver):
     return player_list
 
 
-def compare_player_stats():
-    pass
+def compare_player_stats(player, stat):
+    pass # TODO: Where I should start
 
 def main():
     driver = webdriver.Firefox()
@@ -317,7 +317,7 @@ def main():
             print(f'Question {i + 1}: {question[1]}')
             for player in player_list:
                 if player in question[1]:
-                    print(player)
+                    print(compare_player_stats(player, question[1])) # TODO: Where I finished
 
     driver.quit()
 
