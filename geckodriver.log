@@ -1,0 +1,37 @@
+1614741040355	geckodriver	INFO	Listening on 127.0.0.1:50157
+1614741040359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWKGQCM"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614741041890	Marionette	INFO	Listening on port 37879
+1614741041984	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614741041994	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1614741078104	Marionette	INFO	Stopped listening on port 37879
+1614741105599	geckodriver	INFO	Listening on 127.0.0.1:46401
+1614741105603	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileO88M4G"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614741107131	Marionette	INFO	Listening on port 37021
+1614741107227	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614741107238	Marionette	ERROR	[15] No reply from Marionette:Register
+1614741160251	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1614741170692	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614741170692	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1614741194032	geckodriver	INFO	Listening on 127.0.0.1:38971
+1614741194036	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileF1oHb0"
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is US
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+1614741195507	Marionette	INFO	Listening on port 35689
+1614741195555	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614741195564	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1614741240456	Marionette	INFO	Stopped listening on port 35689
