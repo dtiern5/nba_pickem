@@ -5,33 +5,32 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import pandas as pd
 
-player_list = []
-def compare_player_stats(): # TODO: input player_list when you transfer this?
-    timeout = 25
-    url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
-    driver = webdriver.Firefox()
-    driver.get(url)
-    html = driver.page_source
-    soup = BeautifulSoup(html, 'html.parser')
+driver = webdriver.Firefox()
+driver.implicitly_wait(2)
 
-    table = soup.find('table', attrs={'id': 'per_game_stats'})
+url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
+driver.get(url)
+html = driver.page_source
+soup = BeautifulSoup(html, 'html.parser')
 
-    cols = table.thead.find_all('th')
-    cols = [h.text.strip() for h in cols]
-    cols = cols[1:]
+table = soup.find('table', attrs={'id': 'per_game_stats'})
 
-    rows = table.find_all('tr')
-    rows = rows[1:]
-    player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
+cols = table.thead.find_all('th')
+cols = [h.text.strip() for h in cols]
+cols = cols[1:]
 
-    for i in range(len(player_stats)):
-        if len(player_stats[i]) > 1:
-            player_list.append(player_stats[i][0])
-    print(player_list)
+rows = table.find_all('tr')
 
-    df = pd.DataFrame(player_stats, columns=cols)
-    df.set_index('Player', inplace=True)
 
-    driver.quit()
-    return df
+player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
+player_stats = player_stats[1:]
 
+players_df = pd.DataFrame(player_stats, columns=cols)
+players_df.set_index('Player', inplace=True)
+
+player = 'Trae Young'
+print(f'{player} hits {players_df.loc[player][9]} 3s per game')
+print(f'{player} scores {players_df.loc[player][27]} points per game')
+print(f'{player} grabs {players_df.loc[player][21]} rebounds per game')
+print(f'{player} dishes {players_df.loc[player][22]} assists per game')
+driver.quit()

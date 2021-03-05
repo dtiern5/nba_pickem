@@ -141,7 +141,6 @@ def retrieve_answers(cards, player_list):
                 if player in card[1] and player not in players_in_question:
                     players_in_question.append(player)
             cards[i].append(players_in_question)
-
     return cards
 
 
@@ -250,7 +249,7 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_question_output += f'   {team_2}: {team_2_stat} free throws per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
 
-    elif stat == 'first points':
+    elif stat == 'points':
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][22])
         team_1_opp_stat = float(df_opp_per_game.loc[f'{team_1}'][22])
         team_2_stat = float(df_team_per_game.loc[f'{team_2}'][22])
@@ -296,17 +295,41 @@ def get_player_list(driver):
             player_list.append(player_stats[i][0])
     return player_list
 
+def create_players_df(driver):
+    url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
+    driver.get(url)
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
 
-def compare_player_stats(players, stat):
+    table = soup.find('table', attrs={'id': 'per_game_stats'})
+
+    cols = table.thead.find_all('th')
+    cols = [h.text.strip() for h in cols]
+    cols = cols[1:]
+
+    rows = table.find_all('tr')
+
+    player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
+    player_stats = player_stats[1:]
+
+    players_df = pd.DataFrame(player_stats, columns=cols)
+    players_df.set_index('Player', inplace=True)
+    return players_df
+
+def compare_player_stats(players, stat, df_players):
     player_question_output = ''
-    if stat == '3-pointers':
-        for player in players:
-            # print(f'{player} hits {} 3s per game')
-            pass
-    if stat == 'assists':
-        pass
-    if stat == 'rebounds':
-        pass
+    for player in players:
+        if stat == '3 pointers':
+            player_question_output += (f'{player} hits {df_players.loc[player][9]} 3s per game\n')
+        elif stat == 'assists':
+            player_question_output += (f'{player} dishes {df_players.loc[player][22]} assists per game\n')
+        elif stat == 'rebounds':
+            player_question_output += (f'{player} grabs {df_players.loc[player][21]} rebounds per game\n')
+        elif stat == 'points':
+            player_question_output += (f'{player} scores {df_players.loc[player][27]} points per game\n')
+        else:
+            player_question_output += 'Error in players stats'
+    return player_question_output
 
 def main():
     driver = webdriver.Firefox()
@@ -314,13 +337,17 @@ def main():
     # soup = open_pickem_browser(driver)
     # cards = create_question_cards(soup)
     cards = [[['Atlanta Hawks', 'Minnesota Timberwolves'], 'Which team will grab more rebounds?'], [['Boston Celtics', 'Miami Heat'], 'Which team will dish more assists?'], [['Los Angeles Clippers', 'Washington Wizards'], 'Which team will win the game?']]
-
+    cards.append([['Atlanta Hawks', 'Minnesota Timberwolves'], 'Will Anthony Edwards score more than 0 points?'])
+    cards.append([['Atlanta Hawks', 'Minnesota Timberwolves'], 'Will Ricky Rubio score more than 8 points?'])
+    cards.append([['Milwaukee Bucks', 'Miami Heat'], 'Who will score more points? Giannis Antetokounmpo or Jimmy Butler'])
     player_list = get_player_list(driver)
     vegas = get_vegas_lines(driver)
     soup = open_bball_ref_browser(driver)
     df_team_per_game = create_team_stats_df(soup)
     df_opp_per_game = create_opp_stats_df(soup)
+    df_players = create_players_df(driver)
     retrieve_answers(cards, player_list)
+    print(cards)
 
 
     # The final card format is [[team_1, team_2], question_text, relevant_stat, [player_1, player_2]]
@@ -332,11 +359,7 @@ def main():
                                      vegas))
         else:
             print(f'Question {i + 1}: {card[1]}')
-            players_in_question = []
-            for player in player_list:
-                if player in card[1]:
-                    players_in_question.append(player)
-            print(compare_player_stats(players_in_question, card[2]))
+            print(compare_player_stats(card[3], card[2], df_players))
 
 
     driver.quit()
