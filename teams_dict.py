@@ -30,38 +30,3 @@ convert_team_name = {  # NBA Pickem uses the city name, convert to full for bbal
     'Utah': 'Utah Jazz',
     'Washington': 'Washington Wizards'
 }
-
-
-
-    # Artifacts: would need these to go to specific team's URL
-
-    # 'Atlanta': 'ATL',
-    # 'Boston': 'BOS',
-    # 'Brooklyn': 'BRK',
-    # 'Charlotte': 'CHA',
-    # 'Chicago': 'CHI',
-    # 'Cleveland': 'CLE',
-    # 'Dallas': 'DAL',
-    # 'Denver': 'DEN',
-    # 'Detroit': 'DET',
-    # 'Golden State': 'GSW',
-    # 'Houston': 'HOU',
-    # 'Indiana': 'IND',
-    # 'LA': 'LAC',
-    # 'Los Angeles': 'LAL',
-    # 'Memphis': 'MEM',
-    # 'Miami': 'MIA',
-    # 'Milwaukee': 'MIL',
-    # 'Minnesota': 'MIN',
-    # 'New Orleans': 'NOP',
-    # 'New York': 'NYK',
-    # 'Oklahoma City': 'OKC',
-    # 'Orlando': 'ORL',
-    # 'Philadelphia': 'PHI',
-    # 'Phoenix': 'PHO',
-    # 'Portland': 'POR',
-    # 'Sacramento': 'SAC',
-    # 'San Antonio': 'SAS',
-    # 'Toronto': 'TOR',
-    # 'Utah': 'UTA',
-    # 'Washington': 'WAS'

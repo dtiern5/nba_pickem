@@ -146,7 +146,7 @@ def retrieve_answers(cards, player_list):
 
 
 def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, vegas):
-    stat_output = ''  # initialize
+    team_question_output = ''  # initialize
     if stat == 'rebounds':  # WORKING ON THIS ONE
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][16])
         team_1_opp_stat = float(df_opp_per_game.loc[f'{team_1}'][16])
@@ -157,9 +157,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} rebounds per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} rebounds per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} rebounds per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} rebounds per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'assists':
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][17])
@@ -171,9 +171,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} assists per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} assists per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} assists per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} assists per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'steals':
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][18])
@@ -185,9 +185,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} steals per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} steals per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} steals per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} steals per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'block':
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][19])
@@ -199,9 +199,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} blocks per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} blocks per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} blocks per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} blocks per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
 
     elif stat == 'field goal':
@@ -214,9 +214,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 3)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 3)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} FG% per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} FG% per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} FG% per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} FG% per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
 
     elif stat == '3 pointers':
@@ -229,9 +229,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} 3 pointers per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} 3 pointers per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} 3 pointers per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} 3 pointers per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
 
 
@@ -245,9 +245,9 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} free throws per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} free throws per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} free throws per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} free throws per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
 
     elif stat == 'first points':
@@ -260,18 +260,18 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        stat_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
-        stat_output += f'   {team_1}: {team_1_stat} points per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
-        stat_output += f'   {team_2}: {team_2_stat} points per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+        team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {team_1_stat} points per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        team_question_output += f'   {team_2}: {team_2_stat} points per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'win':
-        stat_output += f'{team_1}\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n'
-        stat_output += f'   {team_1}: {str(vegas.get(team_1))}\n'
-        stat_output += f'   {team_2}: {str(vegas.get(team_2))}\n'
+        team_question_output += f'{team_1}\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n'
+        team_question_output += f'   {team_1}: {str(vegas.get(team_1))}\n'
+        team_question_output += f'   {team_2}: {str(vegas.get(team_2))}\n'
     else:
-        stat_output = 'Error in get_team_stat'
+        team_question_output = 'Error in get_team_stat'
 
-    return stat_output
+    return team_question_output
 
 
 def get_player_list(driver):
@@ -297,19 +297,24 @@ def get_player_list(driver):
     return player_list
 
 
-def compare_player_stats(player, stat):
+def compare_player_stats(players, stat):
+    player_question_output = ''
     if stat == '3-pointers':
-        pass
+        for player in players:
+            # print(f'{player} hits {} 3s per game')
+            pass
     if stat == 'assists':
         pass
     if stat == 'rebounds':
         pass
+
 def main():
     driver = webdriver.Firefox()
     driver.implicitly_wait(2)
-    soup = open_pickem_browser(driver)
-    cards = create_question_cards(soup)
-    print(cards)
+    # soup = open_pickem_browser(driver)
+    # cards = create_question_cards(soup)
+    cards = [[['Atlanta Hawks', 'Minnesota Timberwolves'], 'Which team will grab more rebounds?'], [['Boston Celtics', 'Miami Heat'], 'Which team will dish more assists?'], [['Los Angeles Clippers', 'Washington Wizards'], 'Which team will win the game?']]
+
     player_list = get_player_list(driver)
     vegas = get_vegas_lines(driver)
     soup = open_bball_ref_browser(driver)
@@ -327,9 +332,11 @@ def main():
                                      vegas))
         else:
             print(f'Question {i + 1}: {card[1]}')
+            players_in_question = []
             for player in player_list:
                 if player in card[1]:
-                    print(compare_player_stats(player, card[2]))
+                    players_in_question.append(player)
+            print(compare_player_stats(players_in_question, card[2]))
 
 
     driver.quit()
