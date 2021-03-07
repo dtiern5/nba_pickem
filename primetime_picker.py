@@ -54,6 +54,10 @@ def get_player_list(driver):
     rows = rows[1:]
     player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
 
+    for i, player in enumerate(player_stats):
+        if len(player_stats[i]) > 1:
+            player_stats[i][0] = unidecode.unidecode(player_stats[i][0])
+
     for i in range(len(player_stats)):
         if len(player_stats[i]) > 1:
             player_list.append(player_stats[i][0])
@@ -178,7 +182,6 @@ def create_players_df(driver):
             player_stats[i][0] = unidecode.unidecode(player_stats[i][0])
     players_df = pd.DataFrame(player_stats, columns=cols)
     players_df.set_index('Player', inplace=True)
-
     return players_df
 
 
@@ -334,7 +337,6 @@ def compare_player_stats(players, stat, df_players, df_opp_per_game, teams):
         for team, abbr in convert_to_abbrev.items():
             if abbr == opp_team_abbr:
                 opp_team = team
-
         if stat.lower() == 'threes':
             player_threes = float(df_players.loc[player][9])
             defense_threes = float(df_opp_per_game.loc[f'{opp_team}'][7])
@@ -457,6 +459,7 @@ def manual_entry(df_players, df_opp_per_game):
         manual_entry(df_players, df_opp_per_game)
     else:
         print('Goodbye')
+        return
 
 
 def user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas):
