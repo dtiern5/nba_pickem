@@ -99,7 +99,7 @@ def get_vegas_lines(driver):
     driver.quit()
 
 
-def create_question_cards(soup):
+def initialize_questions_list(soup):
     # Each "card" contains two teams, and a question pertaining to them
     find_cards = soup.find_all('div', attrs={'class': 'PrimetimePicksMatchupstyled__PtpCardContainer-tdtza-0 fLNWPg'})
 
@@ -185,7 +185,7 @@ def create_players_df(driver):
     return players_df
 
 
-def create_usable_list(cards, player_list):
+def append_list_stat_players(cards, player_list):
     for i, card in enumerate(cards):
         stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
         cards[i].append(stat)
@@ -198,7 +198,7 @@ def create_usable_list(cards, player_list):
     return cards
 
 
-def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, vegas):
+def auto_compare_teams(team_1, team_2, stat, df_team_per_game, df_opp_per_game, vegas):
     team_question_output = ''  # initialize
     if stat == 'rebounds':  # WORKING ON THIS ONE
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][16])
@@ -323,7 +323,7 @@ def compare_teams_stat(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
 
 
 # TODO: This is temporary, should merge with manual input if possible
-def compare_player_stats(players, stat, df_players, df_opp_per_game, teams):
+def auto_compare_players(players, stat, df_players, df_opp_per_game, teams):
     player_question_output = ''
     team_abbrs = []
 
@@ -387,23 +387,29 @@ def compare_player_stats(players, stat, df_players, df_opp_per_game, teams):
     return player_question_output
 
 
-def manual_entry(df_players, df_opp_per_game):
+def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, vegas):
     stat_list = ['assists', 'points', 'rebounds', 'threes']
 
     player = input("Player's full name: ")
+    if player.lower() == 'q':
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
     if player not in df_players.index:
         print('Use full player name\n')
-        manual_entry(df_players, df_opp_per_game)
+        manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     stat = input("Stat in question: ")
+    if stat.lower() == 'q':
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
     if stat.lower() not in stat_list:
         print("Viable stats are 'assists', 'points', 'rebounds', 'threes'\n")
-        manual_entry(df_players, df_opp_per_game)
+        manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     opposing_input = input("Opposing team: ")
+    if opposing_input.lower() == 'q':
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
     if opposing_input not in df_opp_per_game.index:
         print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
-        manual_entry(df_players, df_opp_per_game)
+        manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     player_question_output = ''
     if stat.lower() == 'threes':
@@ -454,18 +460,20 @@ def manual_entry(df_players, df_opp_per_game):
         player_question_output += 'Error in players stats'
     print(player_question_output)
 
-    run_prompt = input('Another player? Y/N\n')
+    run_prompt = input('Another player? Y/N (\'q\' for quit)\n')
     if run_prompt.lower() == 'y':
-        manual_entry(df_players, df_opp_per_game)
+        manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, vegas)
+    elif run_prompt.lower() == 'q':
+        print('Exiting...')
+        exit()
     else:
-        print('Goodbye')
-        return
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
 
 def user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas):
-    user_method = input('Manual or Auto?\n')
+    user_method = input('Manual or Auto? (\'q\' for quit)\n')
     if user_method.lower() == 'manual':
-        manual_entry(df_players, df_opp_per_game)
+        manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, vegas)
     elif user_method.lower() == 'auto':
         cards = [[['Boston Celtics', 'Miami Heat'], 'Which team will dish more assists?'],
                  [['Atlanta Hawks', 'Minnesota Timberwolves'], 'Which team will grab more rebounds?'],
@@ -478,25 +486,27 @@ def user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_lis
                  [['Phoenix Suns', 'Atlanta Hawks'], 'Who will dish more assists? Chris Paul or Trae Young'],
                  [['Toronto Raptors', 'Denver Nuggets'], 'Who will score more points? Fred VanVleet or Nikola Jokic']]
 
-
-
-        create_usable_list(cards, player_list)
+        append_list_stat_players(cards, player_list)
 
         # The final card format is [[team_1, team_2], question_text, relevant_stat, [player_1, player_2]]
         # cards[i][3] only exists for player questions
         for i, card in enumerate(cards):
             if 'team' in card[1]:
                 print(f'Question {i + 1}: {card[1]}, {card[0][0]} or {card[0][1]}')
-                print(compare_teams_stat(card[0][0], card[0][1], card[2], df_team_per_game, df_opp_per_game,
+                print(auto_compare_teams(card[0][0], card[0][1], card[2], df_team_per_game, df_opp_per_game,
                                          vegas))
             else:
                 print(f'Question {i + 1}: {card[1]}')
-                print(compare_player_stats(card[3], card[2], df_players, df_opp_per_game, card[0]))
+                print(auto_compare_players(card[3], card[2], df_players, df_opp_per_game, card[0]))
+
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
+
     elif user_method.lower() == 'q':
         print('Exiting...')
-        return
+        exit()
     else:
         print("Viable inputs are 'Manual', 'Auto', or 'q' for quit")
+        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
 def main():
     print("Please wait, scraping data from web and organizing into dataframes")
