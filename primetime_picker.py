@@ -404,49 +404,48 @@ def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, veg
         print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
         manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
-    opposing_input = input("Opposing team: ")
-    if opposing_input.lower() == 'q':
+    opp_team = input("Opposing team: ")
+    if opp_team.lower() == 'q':
         user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
-    if opposing_input not in df_opp_per_game.index:
+    if opp_team not in df_opp_per_game.index:
         print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
         manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     player_question_output = ''
     if stat.lower() == '3 pointers':
         player_threes = float(df_players.loc[player][9])
-        defense_threes = float(df_opp_per_game.loc[f'{opposing_input}'][7])
+        defense_threes = float(df_opp_per_game.loc[f'{opp_team}'][7])
         league_threes_avg = float(df_opp_per_game.loc['League Average'][7])
         predicted_threes = round(player_threes * (defense_threes / league_threes_avg), 1)
 
         player_question_output += (f'   {player}: {player_threes} 3s per game\n')
-        player_question_output += (f'   Against {opposing_input}\'s defense, {player} will hit {predicted_threes} threes\n')
+        player_question_output += (f'   {player}: {predicted_threes} weighted against {opp_team}\n')
 
     elif stat.lower() == 'assists':
         player_assists = float(df_players.loc[player][22])
-        def_assists = float(df_opp_per_game.loc[f'{opposing_input}'][17])
+        def_assists = float(df_opp_per_game.loc[f'{opp_team}'][17])
         league_assists_avg = float(df_opp_per_game.loc['League Average'][17])
         predicted_assists = round(player_assists * (def_assists / league_assists_avg), 1)
 
         player_question_output += (f'   {player}: {player_assists} assists per game\n')
-        player_question_output += (f'   Against {opposing_input}\'s defense, {player} will dish {predicted_assists} assists\n')
+        player_question_output += (f'   {player}: {predicted_assists} weighted against {opp_team}\n')
 
     elif stat.lower() == 'rebounds':
         player_rebounds = float(df_players.loc[player][21])
-        def_rebounds = float(df_opp_per_game.loc[f'{opposing_input}'][16])
+        def_rebounds = float(df_opp_per_game.loc[f'{opp_team}'][16])
         league_rebounds_avg = float(df_opp_per_game.loc['League Average'][16])
         predicted_rebounds = round(player_rebounds * (def_rebounds / league_rebounds_avg), 1)
 
         player_question_output += (f'   {player}: {player_rebounds} rebounds per game\n')
-        player_question_output += (f'   Against {opposing_input}\'s defense, {player} will grab {predicted_rebounds} rebounds\n')
-
+        player_question_output += (f'   {player}: {predicted_rebounds} weighted against {opp_team}\n')
 
     elif stat.lower() == 'points':
         points_from_two = float(df_players.loc[player][12]) * 2
         points_from_three = float(df_players.loc[player][9]) * 3
         points_from_ft = float(df_players.loc[player][16])
 
-        defense_twos = float(df_opp_per_game.loc[f'{opposing_input}'][10])
-        defense_threes = float(df_opp_per_game.loc[f'{opposing_input}'][7])
+        defense_twos = float(df_opp_per_game.loc[f'{opp_team}'][10])
+        defense_threes = float(df_opp_per_game.loc[f'{opp_team}'][7])
 
         league_twos_avg = float(df_opp_per_game.loc['League Average'][10])
         league_threes_avg = float(df_opp_per_game.loc['League Average'][7])
@@ -454,8 +453,7 @@ def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, veg
         predicted_points = round(points_from_two * (defense_twos/league_twos_avg) + points_from_three * (defense_threes/league_threes_avg) + points_from_ft, 1)
 
         player_question_output += (f'   {player}: {df_players.loc[player][27]}ppg\n')
-        player_question_output += (f'   Against {opposing_input}: {player} will score {predicted_points} points\n')
-
+        player_question_output += (f'   {player}: {predicted_points} weighted against {opp_team}\n')
     else:
         player_question_output += 'Error in players stats'
     print(player_question_output)
