@@ -7,8 +7,8 @@ import pandas as pd
 from teams_dict import convert_team_name
 from teams_dict import convert_to_abbrev
 from find_stat import find_stat
+from find_stat import color
 import unidecode
-import unicodedata
 
 
 def open_pickem_browser(driver):
@@ -270,7 +270,7 @@ def auto_compare_teams(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_question_output += f'   {team_1}: {team_1_stat} FG% per game\n   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} FG% per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
-    elif stat == 'threes':
+    elif stat == '3 pointers':
         team_1_stat = float(df_team_per_game.loc[f'{team_1}'][5])
         team_1_opp_stat = float(df_opp_per_game.loc[f'{team_1}'][5])
         team_2_stat = float(df_team_per_game.loc[f'{team_2}'][5])
@@ -313,9 +313,12 @@ def auto_compare_teams(team_1, team_2, stat, df_team_per_game, df_opp_per_game, 
         team_question_output += f'   {team_2}: {team_2_stat} points per game\n   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'win':
-        team_question_output += f'{team_1}\n\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n\n'
-        team_question_output += f'   {team_1}: {str(vegas.get(team_1))}\n'
-        team_question_output += f'   {team_2}: {str(vegas.get(team_2))}\n'
+        if vegas == {}:
+            print('   No current vegas odds')
+        else:
+            team_question_output += f'{team_1}\n\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n\n'
+            team_question_output += f'   {team_1}: {str(vegas.get(team_1))}\n'
+            team_question_output += f'   {team_2}: {str(vegas.get(team_2))}\n'
     else:
         team_question_output = 'Error in get_team_stat'
 
@@ -337,15 +340,14 @@ def auto_compare_players(players, stat, df_players, df_opp_per_game, teams):
         for team, abbr in convert_to_abbrev.items():
             if abbr == opp_team_abbr:
                 opp_team = team
-        if stat.lower() == 'threes':
+        if stat.lower() == '3 pointers':
             player_threes = float(df_players.loc[player][9])
             defense_threes = float(df_opp_per_game.loc[f'{opp_team}'][7])
             league_threes_avg = float(df_opp_per_game.loc['League Average'][7])
             predicted_threes = round(player_threes * (defense_threes / league_threes_avg), 1)
 
             player_question_output += (f'   {player}: {player_threes} 3s per game\n')
-            player_question_output += (
-                f'   Against {opp_team}\'s defense, {player} will hit {predicted_threes} threes\n')
+            player_question_output += (f'   {player}: {predicted_threes} weighted against {opp_team}\n')
 
         elif stat == 'assists':
             player_assists = float(df_players.loc[player][22])
@@ -354,8 +356,7 @@ def auto_compare_players(players, stat, df_players, df_opp_per_game, teams):
             predicted_assists = round(player_assists * (def_assists / league_assists_avg), 1)
 
             player_question_output += (f'   {player}: {player_assists} assists per game\n')
-            player_question_output += (
-                f'   Against {opp_team}\'s defense, {player} will dish {predicted_assists} assists\n')
+            player_question_output += (f'   {player}: {predicted_assists} weighted against {opp_team}\n')
 
         elif stat == 'rebounds':
             player_rebounds = float(df_players.loc[player][21])
@@ -364,8 +365,7 @@ def auto_compare_players(players, stat, df_players, df_opp_per_game, teams):
             predicted_rebounds = round(player_rebounds * (def_rebounds / league_rebounds_avg), 1)
 
             player_question_output += (f'   {player}: {player_rebounds} rebounds per game\n')
-            player_question_output += (
-                f'   Against {opp_team}\'s defense, {player} will grab {predicted_rebounds} rebounds\n')
+            player_question_output += (f'   {player}: {predicted_rebounds} weighted against {opp_team}\n')
 
         elif stat == 'points':
             points_from_two = float(df_players.loc[player][12]) * 2
@@ -382,13 +382,13 @@ def auto_compare_players(players, stat, df_players, df_opp_per_game, teams):
                         defense_threes / league_threes_avg) + points_from_ft, 1)
 
             player_question_output += (f'   {player}: {df_players.loc[player][27]}ppg\n')
-            player_question_output += (f'   Against {opp_team}: {player} will score {predicted_points} points\n')
+            player_question_output += (f'   {player}: {predicted_points} weighted against {opp_team}\n')
 
     return player_question_output
 
 
 def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, vegas):
-    stat_list = ['assists', 'points', 'rebounds', 'threes']
+    stat_list = ['assists', 'points', 'rebounds', '3 pointers']
 
     player = input("Player's full name: ")
     if player.lower() == 'q':
@@ -401,7 +401,7 @@ def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, veg
     if stat.lower() == 'q':
         user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
     if stat.lower() not in stat_list:
-        print("Viable stats are 'assists', 'points', 'rebounds', 'threes'\n")
+        print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
         manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     opposing_input = input("Opposing team: ")
@@ -412,7 +412,7 @@ def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, veg
         manual_entry(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     player_question_output = ''
-    if stat.lower() == 'threes':
+    if stat.lower() == '3 pointers':
         player_threes = float(df_players.loc[player][9])
         defense_threes = float(df_opp_per_game.loc[f'{opposing_input}'][7])
         league_threes_avg = float(df_opp_per_game.loc['League Average'][7])
@@ -470,22 +470,11 @@ def manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, veg
         user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
 
-def user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas):
+def user_method_prompt(cards, df_players, df_team_per_game, df_opp_per_game, player_list, vegas):
     user_method = input('Manual or Auto? (\'q\' for quit)\n')
     if user_method.lower() == 'manual':
         manual_entry(df_players, df_opp_per_game, df_team_per_game, player_list, vegas)
     elif user_method.lower() == 'auto':
-        cards = [[['Boston Celtics', 'Miami Heat'], 'Which team will dish more assists?'],
-                 [['Atlanta Hawks', 'Minnesota Timberwolves'], 'Which team will grab more rebounds?'],
-                 [['Los Angeles Clippers', 'Washington Wizards'], 'Which team have more steals?'],
-                 [['Atlanta Hawks', 'Minnesota Timberwolves'], 'Will Anthony Edwards score more than 0 points?'],
-                 [['Minnesota Timberwolves', 'Golden State Warriors'], 'Who will hit more 3 pointers? Anthony Edwards or Stephen Curry'],
-                 [['Atlanta Hawks', 'Minnesota Timberwolves'], 'Will Ricky Rubio score more than 8 points?'],
-                 [['Milwaukee Bucks', 'Miami Heat'], 'Who will score more points? Giannis Antetokounmpo or Jimmy Butler'],
-                 [['Utah Jazz', 'Philadelphia 76ers'], 'Who will grab more rebounds? Joel Embiid or Rudy Gobert'],
-                 [['Phoenix Suns', 'Atlanta Hawks'], 'Who will dish more assists? Chris Paul or Trae Young'],
-                 [['Toronto Raptors', 'Denver Nuggets'], 'Who will score more points? Fred VanVleet or Nikola Jokic']]
-
         append_list_stat_players(cards, player_list)
 
         # The final card format is [[team_1, team_2], question_text, relevant_stat, [player_1, player_2]]
@@ -499,22 +488,22 @@ def user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_lis
                 print(f'Question {i + 1}: {card[1]}')
                 print(auto_compare_players(card[3], card[2], df_players, df_opp_per_game, card[0]))
 
-        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
+        user_method_prompt(cards, df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
     elif user_method.lower() == 'q':
         print('Exiting...')
         exit()
     else:
         print("Viable inputs are 'Manual', 'Auto', or 'q' for quit")
-        user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
+        user_method_prompt(cards, df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
 def main():
     print("Please wait, scraping data from web and organizing into dataframes")
     print("This can take a minute")
     driver = webdriver.Firefox()
-    driver.implicitly_wait(1)
-    # soup = open_pickem_browser(driver)
-    # cards = create_question_cards(soup)
+    driver.implicitly_wait(6)
+    soup = open_pickem_browser(driver)
+    cards = initialize_questions_list(soup)
     player_list = get_player_list(driver)
     vegas = get_vegas_lines(driver)
     soup = open_bball_ref_browser(driver)
@@ -523,7 +512,7 @@ def main():
     df_players = create_players_df(driver)
     driver.quit()
 
-    user_method_prompt(df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
+    user_method_prompt(cards, df_players, df_team_per_game, df_opp_per_game, player_list, vegas)
 
 
 if __name__ == "__main__":
