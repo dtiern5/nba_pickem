@@ -3,22 +3,7 @@ from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
 
-
 # TODO: add comments, add manual team entry, MAYBE add more stats?
-
-
-# Function adds the players in question, and the specific stat in question to the card
-def cards_add_info(cards, player_list):
-    for i, card in enumerate(cards):
-        stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
-        cards[i].append(stat)
-        players_in_question = []
-        if 'team' not in card[1]:
-            for player in player_list:
-                if player in card[1] and player not in players_in_question:
-                    players_in_question.append(player)
-            cards[i].append(players_in_question)
-    return cards
 
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, vegas):
@@ -242,6 +227,20 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, vegas):
         manual_player(cards, players_df, opp_df, team_df, player_list, vegas)
     else:
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+
+
+# Function adds the players in question, and the specific stat in question to the card
+def cards_add_info(cards, player_list):
+    for i, card in enumerate(cards):
+        stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
+        cards[i].append(stat)
+        players_in_question = []
+        if 'team' not in card[1]:
+            for player in player_list:
+                if player in card[1] and player not in players_in_question:
+                    players_in_question.append(player)
+            cards[i].append(players_in_question)
+    return cards
 
 
 def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):

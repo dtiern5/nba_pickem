@@ -1,7 +1,7 @@
 from teams_dict import convert_to_abbrev
 
 
-# TODO: add NetRtg to who will win question, add vegas disclaimer to who will win question (and copy into manaul entry)
+# TODO: add NetRtg to who will win question, add vegas disclaimer to who will win question (and copy into manual entry)
 
 
 def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
