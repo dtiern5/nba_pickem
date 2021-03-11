@@ -3,7 +3,10 @@ from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
 
-# TODO: add comments, add manual team entry, MAYBE add more stats?
+# TODO: Allow abbreviated team names for manual entry
+# TODO: Clearly define what inputs are allowed
+# TODO: Add more stats to manual_players
+# TODO: Add vegas disclaimer to who will win question
 
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, vegas):
