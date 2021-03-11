@@ -2,6 +2,8 @@ from selenium import webdriver
 from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
+
+
 # TODO: add comments, add manual team entry, MAYBE add more stats?
 
 
@@ -19,7 +21,150 @@ def cards_add_info(cards, player_list):
     return cards
 
 
-def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
+def manual_team(cards, players_df, opp_df, team_df, player_list, vegas):
+    team_1 = input('First team: ')
+    team_2 = input('Second team: ')
+    stat = input('Stat to compare: ')
+
+    output = ''
+    if stat == 'rebounds':
+        team_1_stat = float(team_df.loc[f'{team_1}'][16])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][16])
+        team_2_stat = float(team_df.loc[f'{team_2}'][16])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][16])
+        league_avg_stat = float(team_df.loc[f'League Average'][16])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} rebounds per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} rebounds per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'assists':
+        team_1_stat = float(team_df.loc[f'{team_1}'][17])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][17])
+        team_2_stat = float(team_df.loc[f'{team_2}'][17])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][17])
+        league_avg_stat = float(team_df.loc[f'League Average'][17])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} assists per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} assists per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'steals':
+        team_1_stat = float(team_df.loc[f'{team_1}'][18])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][18])
+        team_2_stat = float(team_df.loc[f'{team_2}'][18])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][18])
+        league_avg_stat = float(team_df.loc[f'League Average'][18])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} steals per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} steals per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'block':
+        team_1_stat = float(team_df.loc[f'{team_1}'][19])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][19])
+        team_2_stat = float(team_df.loc[f'{team_2}'][19])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][19])
+        league_avg_stat = float(team_df.loc[f'League Average'][19])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} blocks per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} blocks per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'field goal':
+        team_1_stat = float(team_df.loc[f'{team_1}'][4])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][4])
+        team_2_stat = float(team_df.loc[f'{team_2}'][4])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][4])
+        league_avg_stat = float(team_df.loc[f'League Average'][4])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 3)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 3)
+
+        output += f'   {team_1}: {team_1_stat} FG% per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} FG% per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == '3 pointers':
+        team_1_stat = float(team_df.loc[f'{team_1}'][5])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][5])
+        team_2_stat = float(team_df.loc[f'{team_2}'][5])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][5])
+        league_avg_stat = float(team_df.loc[f'League Average'][5])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} 3 pointers per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} 3 pointers per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'free throws':
+        team_1_stat = float(team_df.loc[f'{team_1}'][11])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][11])
+        team_2_stat = float(team_df.loc[f'{team_2}'][11])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][11])
+        league_avg_stat = float(team_df.loc[f'League Average'][11])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} free throws per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} free throws per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'points':
+        team_1_stat = float(team_df.loc[f'{team_1}'][22])
+        team_1_opp_stat = float(opp_df.loc[f'{team_1}'][22])
+        team_2_stat = float(team_df.loc[f'{team_2}'][22])
+        team_2_opp_stat = float(opp_df.loc[f'{team_2}'][22])
+        league_avg_stat = float(team_df.loc[f'League Average'][22])
+
+        team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
+        team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
+
+        output += f'   {team_1}: {team_1_stat} points per game\n' \
+                  f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
+        output += f'   {team_2}: {team_2_stat} points per game\n' \
+                  f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
+
+    elif stat == 'win':
+        if vegas == {}:
+            print('   No current vegas odds')
+        else:
+            output += f'{team_1}\n\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n\n'
+            output += f'   {team_1}: {str(vegas.get(team_1))}\n'
+            output += f'   {team_2}: {str(vegas.get(team_2))}\n'
+
+    print(output)
+
+    run_prompt = input('Another team question? Y/N\n')
+    if run_prompt.lower() == 'y':
+        manual_team(cards, players_df, opp_df, team_df, player_list, vegas)
+    else:
+        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+
+
+def manual_player(cards, players_df, opp_df, team_df, player_list, vegas):
     # Possible stats in question
     stat_list = ['assists', 'points', 'rebounds', '3 pointers']
 
@@ -28,21 +173,21 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
     if player not in players_df.index:
         print('Use full player name\n')
-        manual_entry(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
 
     stat = input("Stat in question: ")
     if stat.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
     if stat.lower() not in stat_list:
         print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
-        manual_entry(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
 
     opp_team = input("Opposing team: ")
     if opp_team.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
     if opp_team not in opp_df.index:
         print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
-        manual_entry(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
 
     player_question_output = ''
     if stat.lower() == '3 pointers':
@@ -84,7 +229,7 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         league_threes_avg = float(opp_df.loc['League Average'][7])
 
         predicted_points = round(points_from_two * (defense_twos / league_twos_avg) + points_from_three * (
-                    defense_threes / league_threes_avg) + points_from_ft, 1)
+                defense_threes / league_threes_avg) + points_from_ft, 1)
 
         player_question_output += f'   {player}: {players_df.loc[player][27]}ppg\n'
         player_question_output += f'   {player}: {predicted_points} weighted against {opp_team}\n'
@@ -94,7 +239,7 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
 
     run_prompt = input('Another player? Y/N\n')
     if run_prompt.lower() == 'y':
-        manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
+        manual_player(cards, players_df, opp_df, team_df, player_list, vegas)
     else:
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 
@@ -103,7 +248,13 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
     user_method = input('Manual or Auto? (\'q\' for quit)\n')
 
     if user_method.lower() == 'manual':
-        manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
+        team_or_player = input('Team or player question?\n')
+        if team_or_player.lower() == 'player':
+            manual_player(cards, players_df, opp_df, team_df, player_list, vegas)
+        elif team_or_player.lower() == 'team':
+            manual_team(cards, players_df, opp_df, team_df, player_list, vegas)
+        else:
+            prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 
     elif user_method.lower() == 'auto':
         # adds card[2] for stat involved in question, and card[3] for list of players
