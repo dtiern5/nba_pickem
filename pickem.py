@@ -1,18 +1,12 @@
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.common.by import By
-from bs4 import BeautifulSoup
-import pandas as pd
-from teams_dict import convert_team_name
-from teams_dict import convert_to_abbrev
 from find_stat import find_stat
-import unidecode
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
+# TODO: Fix formatting, add comments, add manual team entry, MAYBE add more stats?
 
 
-def add_players_stat_to_cards(cards, player_list):
+# Function adds the players in question, and the specific stat in question to the card
+def cards_add_info(cards, player_list):
     for i, card in enumerate(cards):
         stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
         cards[i].append(stat)
@@ -26,6 +20,7 @@ def add_players_stat_to_cards(cards, player_list):
 
 
 def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
+    # Possible stats in question
     stat_list = ['assists', 'points', 'rebounds', '3 pointers']
 
     player = input("Player's full name: ")
@@ -88,7 +83,8 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         league_twos_avg = float(opp_df.loc['League Average'][10])
         league_threes_avg = float(opp_df.loc['League Average'][7])
 
-        predicted_points = round(points_from_two * (defense_twos/league_twos_avg) + points_from_three * (defense_threes/league_threes_avg) + points_from_ft, 1)
+        predicted_points = round(points_from_two * (defense_twos / league_twos_avg) + points_from_three * (
+                    defense_threes / league_threes_avg) + points_from_ft, 1)
 
         player_question_output += (f'   {player}: {players_df.loc[player][27]}ppg\n')
         player_question_output += (f'   {player}: {predicted_points} weighted against {opp_team}\n')
@@ -112,16 +108,17 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
         pass
         manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
     elif user_method.lower() == 'auto':
-        add_players_stat_to_cards(cards, player_list)
+        cards_add_info(cards, player_list)
 
         for i, card in enumerate(cards):
             if 'team' in card[1]:
                 print(f'Question {i + 1}: {card[1]}, {card[0][0]} or {card[0][1]}')
                 print(auto_compare_teams(card[0][0], card[0][1], card[2], team_df, opp_df,
-                                         vegas)) # First team, second team, stat in question
+                                         vegas))  # First team, second team, stat in question
             else:
                 print(f'Question {i + 1}: {card[1]}')
-                print(auto_compare_players(card[3], card[0], card[2], players_df, opp_df)) # Players, teams, stat in question
+                print(auto_compare_players(card[3], card[0], card[2], players_df,
+                                           opp_df))  # Players, teams, stat in question
 
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 

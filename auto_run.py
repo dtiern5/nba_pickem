@@ -1,5 +1,6 @@
 from teams_dict import convert_to_abbrev
-import pandas as pd
+# TODO: Fix formatting, add NetRtg to who will win question, add vegas disclaimer to who will win question
+
 
 def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
     team_question_output = ''  # initialize

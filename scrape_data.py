@@ -1,4 +1,3 @@
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
@@ -6,8 +5,10 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from teams_dict import convert_team_name
 import unidecode
+# TODO: Fix formatting
 
 
+# Scrape NBA Pickem information
 def curr_pickem_qs(driver):
     timeout = 25
     url = r"https://picks.nba.com/primetime-picks"
@@ -41,6 +42,7 @@ def curr_pickem_qs(driver):
     return curr_cards
 
 
+# Simple list of players from Basketball Reference used for finding players in specific questions (cards_add_info)
 def retrieve_player_list(driver):
     url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
     driver.get(url)
@@ -68,6 +70,7 @@ def retrieve_player_list(driver):
     return player_list
 
 
+# Create dataframe of all NBA player stats
 def create_players_df(driver):
     url = 'https://www.basketball-reference.com/leagues/NBA_2021_per_game.html'
     driver.get(url)
@@ -88,19 +91,20 @@ def create_players_df(driver):
         if len(player_stats[i]) > 1:
             player_stats[i][0] = unidecode.unidecode(player_stats[i][0])  # Remove accents from names
         else:
-            player_stats.remove(player_stats[i])
+            player_stats.remove(player_stats[i]) # Removes mid-table headers
 
     for i in range(len(player_stats)):
-        if (i + 2) < len(player_stats):
+        if (i + 2) < len(player_stats):  # Changes traded players' team to their current, uses "total" for stats
             if player_stats[i][0] == player_stats[i + 2][0]:
                 player_stats[i][3] = player_stats[i + 2][3]
-                player_stats.remove(player_stats[i + 2])
+                player_stats.remove(player_stats[i + 2])  # Removes specific instances of traded players
                 player_stats.remove(player_stats[i + 1])
     players_df = pd.DataFrame(player_stats, columns=cols)
     players_df.set_index('Player', inplace=True)
     return players_df
 
 
+# Get vegas odds if available
 def retrieve_vegas_odds(driver):
     url = "https://sports.yahoo.com/nba/odds/"
     driver.get(url)
@@ -132,6 +136,7 @@ def retrieve_vegas_odds(driver):
     return vegas_dict
 
 
+# Create dataframe of all NBA team stats
 def create_team_df(driver):
     url = "https://www.basketball-reference.com/leagues/NBA_2021.html"
     driver.get(url)
@@ -158,6 +163,7 @@ def create_team_df(driver):
     return team_df
 
 
+# Create dataframe of all NBa team stats 'against'
 def create_opp_df(driver):
     url = "https://www.basketball-reference.com/leagues/NBA_2021.html"
     driver.get(url)
@@ -182,6 +188,3 @@ def create_opp_df(driver):
     opp_df = pd.DataFrame(opp_stats, columns=opp_cols)
     opp_df.set_index('Team', inplace=True)
     return opp_df
-
-
-
