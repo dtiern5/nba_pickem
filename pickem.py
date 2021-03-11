@@ -106,6 +106,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
         manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
 
     elif user_method.lower() == 'auto':
+        # adds card[2] for stat involved in question, and card[3] for list of players
         cards_add_info(cards, player_list)
         for i, card in enumerate(cards):
             if 'team' in card[1]:
@@ -132,6 +133,7 @@ def main():
     print("This can take a minute")
     driver = webdriver.Firefox()
     driver.implicitly_wait(4)
+    # Each 'card' is information for each question [team1, team2], question]
     cards = scrape_data.curr_pickem_qs(driver)
     player_list = scrape_data.retrieve_player_list(driver)
     players_df = scrape_data.create_players_df(driver)
