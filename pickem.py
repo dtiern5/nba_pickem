@@ -2,7 +2,7 @@ from selenium import webdriver
 from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
-# TODO: Fix formatting, add comments, add manual team entry, MAYBE add more stats?
+# TODO: fix exit/return, add comments, add manual team entry, MAYBE add more stats?
 
 
 # Function adds the players in question, and the specific stat in question to the card
@@ -32,14 +32,14 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
 
     stat = input("Stat in question: ")
     if stat.lower() == 'q':
-        prompt_user(players_df, team_df, opp_df, player_list, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
     if stat.lower() not in stat_list:
         print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
         manual_entry(cards, players_df, team_df, opp_df, player_list, vegas)
 
     opp_team = input("Opposing team: ")
     if opp_team.lower() == 'q':
-        prompt_user(players_df, team_df, opp_df, player_list, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
     if opp_team not in opp_df.index:
         print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
         manual_entry(cards, players_df, team_df, opp_df, player_list, vegas)
@@ -51,8 +51,8 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         league_threes_avg = float(opp_df.loc['League Average'][7])
         predicted_threes = round(player_threes * (defense_threes / league_threes_avg), 1)
 
-        player_question_output += (f'   {player}: {player_threes} 3s per game\n')
-        player_question_output += (f'   {player}: {predicted_threes} weighted against {opp_team}\n')
+        player_question_output += f'   {player}: {player_threes} 3s per game\n'
+        player_question_output += f'   {player}: {predicted_threes} weighted against {opp_team}\n'
 
     elif stat.lower() == 'assists':
         player_assists = float(players_df.loc[player][22])
@@ -60,8 +60,8 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         league_assists_avg = float(opp_df.loc['League Average'][17])
         predicted_assists = round(player_assists * (def_assists / league_assists_avg), 1)
 
-        player_question_output += (f'   {player}: {player_assists} assists per game\n')
-        player_question_output += (f'   {player}: {predicted_assists} weighted against {opp_team}\n')
+        player_question_output += f'   {player}: {player_assists} assists per game\n'
+        player_question_output += f'   {player}: {predicted_assists} weighted against {opp_team}\n'
 
     elif stat.lower() == 'rebounds':
         player_rebounds = float(players_df.loc[player][21])
@@ -69,8 +69,8 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         league_rebounds_avg = float(opp_df.loc['League Average'][16])
         predicted_rebounds = round(player_rebounds * (def_rebounds / league_rebounds_avg), 1)
 
-        player_question_output += (f'   {player}: {player_rebounds} rebounds per game\n')
-        player_question_output += (f'   {player}: {predicted_rebounds} weighted against {opp_team}\n')
+        player_question_output += f'   {player}: {player_rebounds} rebounds per game\n'
+        player_question_output += f'   {player}: {predicted_rebounds} weighted against {opp_team}\n'
 
     elif stat.lower() == 'points':
         points_from_two = float(players_df.loc[player][12]) * 2
@@ -86,8 +86,8 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         predicted_points = round(points_from_two * (defense_twos / league_twos_avg) + points_from_three * (
                     defense_threes / league_threes_avg) + points_from_ft, 1)
 
-        player_question_output += (f'   {player}: {players_df.loc[player][27]}ppg\n')
-        player_question_output += (f'   {player}: {predicted_points} weighted against {opp_team}\n')
+        player_question_output += f'   {player}: {players_df.loc[player][27]}ppg\n'
+        player_question_output += f'   {player}: {predicted_points} weighted against {opp_team}\n'
     else:
         player_question_output += 'Error in players stats'
     print(player_question_output)

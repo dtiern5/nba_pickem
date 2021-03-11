@@ -1,5 +1,4 @@
 def find_stat(question):
-    stat = None
     if 'win' in question:
         stat = 'win'
     elif 'rebounds' in question:

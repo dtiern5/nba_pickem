@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from teams_dict import convert_team_name
 import unidecode
-# TODO: Fix formatting
 
 
 # Scrape NBA Pickem information
@@ -51,17 +50,13 @@ def retrieve_player_list(driver):
 
     table = soup.find('table', attrs={'id': 'per_game_stats'})
 
-    cols = table.thead.find_all('th')
-    cols = [h.text.strip() for h in cols]
-    cols = cols[1:]
-
     rows = table.find_all('tr')
     rows = rows[1:]
     player_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
 
     for i, player in enumerate(player_stats):
         if len(player_stats[i]) > 1:
-            player_stats[i][0] = unidecode.unidecode(player_stats[i][0]) # Remove accents (e.g. Dončić to Doncic)
+            player_stats[i][0] = unidecode.unidecode(player_stats[i][0])  # Remove accents (e.g. Dončić to Doncic)
 
     player_list = []
     for i in range(len(player_stats)):
@@ -91,7 +86,7 @@ def create_players_df(driver):
         if len(player_stats[i]) > 1:
             player_stats[i][0] = unidecode.unidecode(player_stats[i][0])  # Remove accents from names
         else:
-            player_stats.remove(player_stats[i]) # Removes mid-table headers
+            player_stats.remove(player_stats[i])  # Removes mid-table headers
 
     for i in range(len(player_stats)):
         if (i + 2) < len(player_stats):  # Changes traded players' team to their current, uses "total" for stats
@@ -111,7 +106,6 @@ def retrieve_vegas_odds(driver):
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    div = soup.find('div', id='op-content-wrapper')
     tables = soup.find_all('table', class_='W(100%) Maw(750px)')
 
     teams = [[t.getText() for t in tables[i].find_all('span', class_='Fw(600) Pend(4px)')] for i in range(len(tables))]
@@ -143,7 +137,7 @@ def create_team_df(driver):
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    # Find 'Team Per Game Stats' tablea
+    # Find 'Team Per Game Stats' table
     table = soup.find('table', attrs={'id': 'team-stats-per_game'})
 
     # Create column headers
