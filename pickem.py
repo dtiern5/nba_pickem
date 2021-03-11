@@ -2,7 +2,7 @@ from selenium import webdriver
 from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
-# TODO: fix exit/return, add comments, add manual team entry, MAYBE add more stats?
+# TODO: add comments, add manual team entry, MAYBE add more stats?
 
 
 # Function adds the players in question, and the specific stat in question to the card
@@ -92,24 +92,21 @@ def manual_entry(cards, players_df, opp_df, team_df, player_list, vegas):
         player_question_output += 'Error in players stats'
     print(player_question_output)
 
-    run_prompt = input('Another player? Y/N (\'q\' for quit)\n')
+    run_prompt = input('Another player? Y/N\n')
     if run_prompt.lower() == 'y':
         manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
-    elif run_prompt.lower() == 'q':
-        print('Exiting...')
-        exit()
     else:
-        exit()
+        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 
 
 def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
     user_method = input('Manual or Auto? (\'q\' for quit)\n')
+
     if user_method.lower() == 'manual':
-        pass
         manual_entry(cards, players_df, opp_df, team_df, player_list, vegas)
+
     elif user_method.lower() == 'auto':
         cards_add_info(cards, player_list)
-
         for i, card in enumerate(cards):
             if 'team' in card[1]:
                 print(f'Question {i + 1}: {card[1]}, {card[0][0]} or {card[0][1]}')
@@ -120,6 +117,13 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
                 print(auto_compare_players(card[3], card[0], card[2], players_df,
                                            opp_df))  # Players, teams, stat in question
 
+        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+
+    elif user_method.lower() == 'q':
+        quit()
+
+    else:
+        print('Not a valid input')
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 
 
