@@ -4,7 +4,7 @@ from teams_dict import convert_to_abbrev
 
 def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
     team_question_output = ''  # initialize
-    if stat == 'rebounds':  # WORKING ON THIS ONE
+    if stat == 'rebounds':
         team_1_stat = float(team_df.loc[f'{team_1}'][16])
         team_1_opp_stat = float(opp_df.loc[f'{team_1}'][16])
         team_2_stat = float(team_df.loc[f'{team_2}'][16])
@@ -14,7 +14,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} rebounds per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} rebounds per game\n' \
@@ -30,7 +29,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} assists per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} assists per game\n' \
@@ -46,7 +44,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} steals per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} steals per game\n' \
@@ -62,7 +59,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} blocks per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} blocks per game\n' \
@@ -78,7 +74,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 3)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 3)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} FG% per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} FG% per game\n' \
@@ -94,7 +89,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} 3 pointers per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} 3 pointers per game\n' \
@@ -110,7 +104,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} free throws per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} free throws per game\n' \
@@ -126,7 +119,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, vegas):
         team_1_prediction = round(team_1_stat * (team_2_opp_stat / league_avg_stat), 1)
         team_2_prediction = round(team_2_stat * (team_1_opp_stat / league_avg_stat), 1)
 
-        # team_question_output += f'{team_1}\n' if team_1_prediction > team_2_prediction else f'{team_2}\n\n'
         team_question_output += f'   {team_1}: {team_1_stat} points per game\n' \
                                 f'   {team_1}: {team_1_prediction} weighted against {team_2}\n'
         team_question_output += f'   {team_2}: {team_2_stat} points per game\n' \
@@ -149,10 +141,12 @@ def auto_compare_players(players, teams, stat, players_df, opp_df):
     player_question_output = ''
     teams_abbr = []
 
+    # Get abbreviated form of team for Basketball Reference player stats
     for team in teams:
         teams_abbr.append(convert_to_abbrev[team])
 
     for player in players:
+        # Given the two teams, which one is the player not on?
         opp_team = None
         for team in teams_abbr:
             if players_df.loc[player][2] != team:
