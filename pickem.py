@@ -2,18 +2,58 @@ from selenium import webdriver
 from find_stat import find_stat
 import scrape_data
 from auto_run import auto_compare_players, auto_compare_teams
+from teams_dict import convert_to_abbrev
 
-# TODO: Allow abbreviated team names for manual entry
-# TODO: Clearly define what inputs are allowed
 # TODO: Add more stats to manual_players
+# TODO: Allow player comparisons in manual_players
 
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
-    print("Use location and team format e.g. 'Minnesota Timberwolves'\n")
+    stat_list = ['rebounds', 'assists', 'steals', 'blocks', 'fg', '3 pointers', 'free throws', 'points', 'winner']
+
+    print(f'\nEligible stats: {stat_list}')
+    print("Use abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
+    print("Type 'ls' to see acceptable team names\n")
+    print("Type 'q' to quit")
+
     team_1 = input('First team: ')
+    if team_1.lower() == 'q':
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
+    if team_1.lower() == 'ls':
+        print('\nTeams List:')
+        for item in convert_to_abbrev.items():
+            print(item)
+        print('\n')
+        manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+    if team_1.upper() not in convert_to_abbrev.values():
+        print('Unrecognized team\n')
+        manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+
     team_2 = input('Second team: ')
-    stat = input("Stat to compare: " + "eligible stats: 'rebounds', 'assists', 'steals', 'blocks', 'fg',"
-                                       " '3 pointers', 'free throws', 'points', 'win'\n")
+    if team_2.lower() == 'q':
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
+    if team_1.lower() == 'ls':
+        print('\nTeams List:')
+        for item in convert_to_abbrev.items():
+            print(item)
+        manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+    if team_2.upper() not in convert_to_abbrev.values():
+        print('Unrecognized team\n')
+        manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+
+    stat = input("Stat to compare: ")
+    if stat.lower() == 'q':
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
+    if stat.lower() not in stat_list:
+        print('Unrecognized stat\n')
+        manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+
+    # Convert abbreviated team names to full name for Basketball Reference table
+    for key, value in convert_to_abbrev.items():
+        if team_1 == value:
+            team_1 = key
+        if team_2 == value:
+            team_2 = key
 
     output = ''
     if stat == 'rebounds':
@@ -136,15 +176,15 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
         output += f'   {team_2}: {team_2_stat} points per game\n' \
                   f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
-    elif stat == 'win':
+    elif stat == 'winner':
         team_1_stat = float(adv_df.loc[f'{team_1}'][7])
         team_2_stat = float(adv_df.loc[f'{team_2}'][7])
         team_1_netrtg = float(adv_df.loc[f'{team_1}'][10])
         team_2_netrtg = float(adv_df.loc[f'{team_2}'][10])
 
         output += f'   {team_1}: {team_1_stat} Simple Rating System\n'
-        output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
         output += f'   {team_1}: {team_1_netrtg} Net Rating\n'
+        output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
         output += f'   {team_2}: {team_2_netrtg} Net Rating\n'
 
         output += '\n   Current Vegas odds:\n'
@@ -163,28 +203,53 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
 def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
     # Possible stats in question
     stat_list = ['assists', 'points', 'rebounds', '3 pointers']
+    print(f'\nEligible stats: {stat_list}')
+    print("Use abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
+    print("Type 'ls' to see acceptable team names\n")
+    print("Type 'q' to quit")
 
     player = input("Player's full name: ")
     if player.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
+    if player.lower() == 'ls':
+        print('\nTeams List:')
+        for item in convert_to_abbrev.items():
+            print(item)
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
     if player not in players_df.index:
-        print('Use full player name\n')
+        print('Unrecognized player\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     stat = input("Stat in question: ")
-    print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
     if stat.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
+    if stat.lower() == 'ls':
+        print('\nTeams List:')
+        for item in convert_to_abbrev.items():
+            print(item)
+        print('\n')
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
     if stat.lower() not in stat_list:
-        print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
+        print('Unrecognized stat\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     opp_team = input("Opposing team: ")
     if opp_team.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
-    if opp_team not in opp_df.index:
-        print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
+    if opp_team.lower() == 'ls':
+        print('\nTeams List:')
+        for item in convert_to_abbrev.items():
+            print(item)
+        print('\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+    if opp_team.upper() not in convert_to_abbrev.values():
+        print('Unrecognized team\n')
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
+
+    # Convert abbreviated team name to full name for Basketball Reference table
+    for key, value in convert_to_abbrev.items():
+        if opp_team == value:
+            opp_team = key
 
     player_question_output = ''
     if stat.lower() == '3 pointers':
@@ -256,10 +321,10 @@ def cards_add_info(cards, player_list):
 
 
 def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
-    user_method = input('Manual or Auto? (\'q\' for quit)\n')
+    user_method = input('Manual or Auto? (\'q\' for quit): ')
 
     if user_method.lower() == 'manual':
-        team_or_player = input('Team or player question?\n')
+        team_or_player = input('Team or player question? ')
         if team_or_player.lower() == 'player':
             manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas)
         elif team_or_player.lower() == 'team':
@@ -271,6 +336,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
         # adds card[2] for stat involved in question, and card[3] for list of either one or two players
         # card format: [[team_1, team_2], 'Pickem Question', 'stat' from question, [player_1, player_2]]
         cards_add_info(cards, player_list)
+        print('\n')
         for i, card in enumerate(cards):
             if 'team' in card[1]:
                 print(f'Question {i + 1}: {card[1]}, {card[0][0]} or {card[0][1]}')
