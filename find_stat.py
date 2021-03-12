@@ -1,3 +1,5 @@
+# 'Question' is one of the ten questions asked on NBA Pickem. find_stat(question) searches for the relevant stat
+
 def find_stat(question):
     if 'win' in question:
         stat = 'winner'
