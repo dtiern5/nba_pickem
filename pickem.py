@@ -6,7 +6,8 @@ from teams_dict import convert_to_abbrev
 
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
-    stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws', 'points', 'rebounds', 'steals', 'winner']
+    stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws',
+                 'points', 'rebounds', 'steals', 'winner']
 
     print(f'\nEligible stats: {stat_list}')
     print("Use abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
