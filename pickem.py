@@ -232,7 +232,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, vegas):
         prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
 
 
-# Function adds the players in question, and the specific stat in question to the card
+# Function adds to the card: the players in question and the specific stat in question
 def cards_add_info(cards, player_list):
     for i, card in enumerate(cards):
         stat = find_stat(card[1])  # Find the stat in the question text('rebound', 'assists')
@@ -292,6 +292,7 @@ def main():
     players_df = scrape_data.create_players_df(driver)
     team_df = scrape_data.create_team_df(driver)
     opp_df = scrape_data.create_opp_df(driver)
+    adv_df = scrape_data.create_adv_df(driver)
     vegas = scrape_data.retrieve_vegas_odds(driver)
     driver.quit()
     prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)

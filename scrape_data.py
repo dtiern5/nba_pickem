@@ -182,3 +182,35 @@ def create_opp_df(driver):
     opp_df = pd.DataFrame(opp_stats, columns=opp_cols)
     opp_df.set_index('Team', inplace=True)
     return opp_df
+
+
+# Create dataframe for team "Miscellaneous Stats" (Advanced Data)
+def create_adv_df(driver):
+    url = "https://www.basketball-reference.com/leagues/NBA_2021.html"
+    driver.get(url)
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
+
+    table = soup.find('table', attrs={'id': 'misc_stats'})
+
+    # This removes a weird extra header thing from the table
+    heads = table.find_all('tr')
+    heads = heads[1]
+
+    # Create column headers
+    cols = heads.find_all('th')
+    cols = [h.text.strip() for h in cols]
+    # Get rid of 'rank' column
+    cols = cols[1:]
+
+    # Get data in rows
+    rows = table.find_all('tr')
+    rows = rows[1:]
+
+    team_stats = [[td.getText().strip() for td in rows[i].find_all('td')] for i in range(len(rows))]
+    team_stats = team_stats[1:]
+
+    adv_table = pd.DataFrame(team_stats, columns=cols)
+    adv_table.set_index('Team', inplace=True)
+
+    return adv_table
