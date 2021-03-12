@@ -9,10 +9,10 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
     stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws',
                  'points', 'rebounds', 'steals', 'winner']
 
-    print(f'\nEligible stats: {stat_list}')
-    print("Use abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
-    print("Type 'ls' to see acceptable team names\n")
-    print("Type 'q' to quit")
+    print("\nUse abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
+    print("Type 'ls' to see acceptable team names")
+    print(f'Eligible stats: {stat_list}')
+    print("Type 'q' to quit\n")
 
     team_1 = input('First team: ')
     if team_1.lower() == 'q':
@@ -185,10 +185,6 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
         output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
         output += f'   {team_2}: {team_2_netrtg} Net Rating\n'
 
-        output += '\n   Current Vegas odds:\n'
-        output += f'   {team_1}: {str(vegas.get(team_1))}\n'
-        output += f'   {team_2}: {str(vegas.get(team_2))}\n'
-
     print(output)
 
     run_prompt = input('Another team question? Y/N\n')
@@ -202,9 +198,9 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
     # Possible stats in question
     stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws', 'points', 'rebounds', 'steals']
 
-    print(f'\nEligible stats: {stat_list}')
-    print("Use abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
+    print("\nUse abbreviated team names (e.g. 'BRK', 'CHO', 'NOP')")
     print("Type 'ls' to see acceptable team names")
+    print(f'Eligible stats: {stat_list}')
     print("Type 'q' to quit\n")
 
     player = input("Player's full name: ")
