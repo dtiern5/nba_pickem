@@ -9,7 +9,7 @@ from auto_run import auto_compare_players, auto_compare_teams
 # TODO: Add vegas disclaimer to who will win question
 
 
-def manual_team(cards, players_df, opp_df, team_df, player_list, vegas):
+def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
     team_1 = input('First team: ')
     team_2 = input('Second team: ')
     stat = input('Stat to compare: ')
@@ -147,35 +147,35 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, vegas):
 
     run_prompt = input('Another team question? Y/N\n')
     if run_prompt.lower() == 'y':
-        manual_team(cards, players_df, opp_df, team_df, player_list, vegas)
+        manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas)
     else:
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
 
-def manual_player(cards, players_df, opp_df, team_df, player_list, vegas):
+def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
     # Possible stats in question
     stat_list = ['assists', 'points', 'rebounds', '3 pointers']
 
     player = input("Player's full name: ")
     if player.lower() == 'q':
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if player not in players_df.index:
         print('Use full player name\n')
-        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     stat = input("Stat in question: ")
     if stat.lower() == 'q':
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if stat.lower() not in stat_list:
         print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
-        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     opp_team = input("Opposing team: ")
     if opp_team.lower() == 'q':
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if opp_team not in opp_df.index:
         print("Needs full location and team name (Ex: 'Minnesota Timberwolves')\n")
-        manual_player(cards, players_df, team_df, opp_df, player_list, vegas)
+        manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     player_question_output = ''
     if stat.lower() == '3 pointers':
@@ -227,9 +227,9 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, vegas):
 
     run_prompt = input('Another player? Y/N\n')
     if run_prompt.lower() == 'y':
-        manual_player(cards, players_df, opp_df, team_df, player_list, vegas)
+        manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas)
     else:
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
 
 # Function adds to the card: the players in question and the specific stat in question
@@ -246,17 +246,17 @@ def cards_add_info(cards, player_list):
     return cards
 
 
-def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
+def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
     user_method = input('Manual or Auto? (\'q\' for quit)\n')
 
     if user_method.lower() == 'manual':
         team_or_player = input('Team or player question?\n')
         if team_or_player.lower() == 'player':
-            manual_player(cards, players_df, opp_df, team_df, player_list, vegas)
+            manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas)
         elif team_or_player.lower() == 'team':
-            manual_team(cards, players_df, opp_df, team_df, player_list, vegas)
+            manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas)
         else:
-            prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+            prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
     elif user_method.lower() == 'auto':
         # adds card[2] for stat involved in question, and card[3] for list of players
@@ -264,21 +264,21 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, vegas):
         for i, card in enumerate(cards):
             if 'team' in card[1]:
                 print(f'Question {i + 1}: {card[1]}, {card[0][0]} or {card[0][1]}')
-                print(auto_compare_teams(card[0][0], card[0][1], card[2], team_df, opp_df,
+                print(auto_compare_teams(card[0][0], card[0][1], card[2], team_df, opp_df, adv_df,
                                          vegas))  # First team, second team, stat in question
             else:
                 print(f'Question {i + 1}: {card[1]}')
                 print(auto_compare_players(card[3], card[0], card[2], players_df,
                                            opp_df))  # Players, teams, stat in question
 
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
     elif user_method.lower() == 'q':
         quit()
 
     else:
         print('Not a valid input')
-        prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+        prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
 
 def main():
@@ -295,7 +295,7 @@ def main():
     adv_df = scrape_data.create_adv_df(driver)
     vegas = scrape_data.retrieve_vegas_odds(driver)
     driver.quit()
-    prompt_user(cards, player_list, players_df, team_df, opp_df, vegas)
+    prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
 
 if __name__ == "__main__":
