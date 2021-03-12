@@ -123,15 +123,15 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, adv_df, vegas):
         output += f'   {team_2}: {team_2_stat} points per game\n' \
                   f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
-    elif stat == 'win':
+    elif stat == 'winner':
         team_1_stat = float(adv_df.loc[f'{team_1}'][7])
         team_2_stat = float(adv_df.loc[f'{team_2}'][7])
         team_1_netrtg = float(adv_df.loc[f'{team_1}'][10])
         team_2_netrtg = float(adv_df.loc[f'{team_2}'][10])
 
         output += f'   {team_1}: {team_1_stat} Simple Rating System\n'
-        output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
         output += f'   {team_1}: {team_1_netrtg} Net Rating\n'
+        output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
         output += f'   {team_2}: {team_2_netrtg} Net Rating\n'
 
         output += '\n   Current Vegas odds:\n'
@@ -140,7 +140,6 @@ def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, adv_df, vegas):
         else:
             output += f'   {team_1}: {str(vegas.get(team_1))}\n'
             output += f'   {team_2}: {str(vegas.get(team_2))}\n'
-
 
     else:
         output = 'Error in get_team_stat'
