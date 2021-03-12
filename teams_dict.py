@@ -1,6 +1,4 @@
-# keys: from NBA Pickem, values: for bball_ref team stats tables
-
-convert_team_name = {
+convert_team_name = {  # keys: from NBA Pickem, values: for bball_ref team stats tables
     'Atlanta': 'Atlanta Hawks',
     'Boston': 'Boston Celtics',
     'Brooklyn': 'Brooklyn Nets',
@@ -33,8 +31,7 @@ convert_team_name = {
     'Washington': 'Washington Wizards'
 }
 
-# keys: first conversion for bball_refs team stats tables, values: for bball_ref player stats table and manual inputs
-convert_to_abbrev = {
+convert_to_abbrev = {  # keys: bball_refs team stats tables, values: for bball_ref player stats table and manual inputs
     'Atlanta Hawks': 'ATL',
     'Boston Celtics': 'BOS',
     'Brooklyn Nets': 'BRK',
