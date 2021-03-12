@@ -9,9 +9,11 @@ from auto_run import auto_compare_players, auto_compare_teams
 
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
+    print("Use location and team format e.g. 'Minnesota Timberwolves'\n")
     team_1 = input('First team: ')
     team_2 = input('Second team: ')
-    stat = input('Stat to compare: ')
+    stat = input("Stat to compare: " + "eligible stats: 'rebounds', 'assists', 'steals', 'block', 'field goal',"
+                                       " '3 pointers', 'free throws', 'points', 'win'\n")
 
     output = ''
     if stat == 'rebounds':
@@ -146,11 +148,8 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
         output += f'   {team_2}: {team_2_netrtg} Net Rating\n'
 
         output += '\n   Current Vegas odds:\n'
-        if vegas == {}:
-            print('   Vegas odds unavailable\n')
-        else:
-            output += f'   {team_1}: {str(vegas.get(team_1))}\n'
-            output += f'   {team_2}: {str(vegas.get(team_2))}\n'
+        output += f'   {team_1}: {str(vegas.get(team_1))}\n'
+        output += f'   {team_2}: {str(vegas.get(team_2))}\n'
 
     print(output)
 
@@ -173,6 +172,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas)
 
     stat = input("Stat in question: ")
+    print("Viable stats are 'assists', 'points', 'rebounds', '3 pointers'\n")
     if stat.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if stat.lower() not in stat_list:
