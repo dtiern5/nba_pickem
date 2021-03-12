@@ -1,4 +1,4 @@
-# NBA Pickem uses the city name, convert to full for bball_ref
+# keys: from NBA Pickem, values: for bball_ref team stats tables
 
 convert_team_name = {
     'Atlanta': 'Atlanta Hawks',
@@ -33,7 +33,7 @@ convert_team_name = {
     'Washington': 'Washington Wizards'
 }
 
-# Convert team name to abbreviated form, used in Basketball Reference's player table
+# keys: first conversion for bball_refs team stats tables, values: for bball_ref player stats table and manual inputs
 convert_to_abbrev = {
     'Atlanta Hawks': 'ATL',
     'Boston Celtics': 'BOS',
