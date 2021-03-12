@@ -2,7 +2,8 @@ from teams_dict import convert_to_abbrev
 
 
 def auto_compare_teams(team_1, team_2, stat, team_df, opp_df, adv_df, vegas):
-    output = ''  # initialize
+    output = ''
+
     if stat == 'rebounds':
         team_1_stat = float(team_df.loc[f'{team_1}'][16])
         team_1_opp_stat = float(opp_df.loc[f'{team_1}'][16])
