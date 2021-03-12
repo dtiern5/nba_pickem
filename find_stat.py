@@ -1,6 +1,6 @@
 def find_stat(question):
     if 'win' in question:
-        stat = 'win'
+        stat = 'winner'
     elif 'rebounds' in question:
         stat = 'rebounds'
     elif 'assists' in question:
