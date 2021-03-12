@@ -12,7 +12,7 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
     print("Use location and team format e.g. 'Minnesota Timberwolves'\n")
     team_1 = input('First team: ')
     team_2 = input('Second team: ')
-    stat = input("Stat to compare: " + "eligible stats: 'rebounds', 'assists', 'steals', 'block', 'field goal',"
+    stat = input("Stat to compare: " + "eligible stats: 'rebounds', 'assists', 'steals', 'blocks', 'fg',"
                                        " '3 pointers', 'free throws', 'points', 'win'\n")
 
     output = ''
@@ -61,7 +61,7 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
         output += f'   {team_2}: {team_2_stat} steals per game\n' \
                   f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
-    elif stat == 'block':
+    elif stat == 'blocks':
         team_1_stat = float(team_df.loc[f'{team_1}'][19])
         team_1_opp_stat = float(opp_df.loc[f'{team_1}'][19])
         team_2_stat = float(team_df.loc[f'{team_2}'][19])
@@ -76,7 +76,7 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
         output += f'   {team_2}: {team_2_stat} blocks per game\n' \
                   f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
-    elif stat == 'field goal':
+    elif stat == 'fg':
         team_1_stat = float(team_df.loc[f'{team_1}'][4])
         team_1_opp_stat = float(opp_df.loc[f'{team_1}'][4])
         team_2_stat = float(team_df.loc[f'{team_2}'][4])

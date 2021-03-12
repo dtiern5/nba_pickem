@@ -8,9 +8,9 @@ def find_stat(question):
     elif 'steals' in question:
         stat = 'steals'
     elif 'block' in question:
-        stat = 'block'
+        stat = 'blocks'
     elif 'field goal' in question:
-        stat = 'field goal'
+        stat = 'fg'
     elif '3 pointers' in question or '3-pointers' in question:
         stat = '3 pointers'
     elif 'free throws' in question:
