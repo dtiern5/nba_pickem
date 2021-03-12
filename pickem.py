@@ -268,7 +268,8 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
             prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
     elif user_method.lower() == 'auto':
-        # adds card[2] for stat involved in question, and card[3] for list of players
+        # adds card[2] for stat involved in question, and card[3] for list of either one or two players
+        # card format: [[team_1, team_2], 'Pickem Question', 'stat' from question, [player_1, player_2]]
         cards_add_info(cards, player_list)
         for i, card in enumerate(cards):
             if 'team' in card[1]:
@@ -291,8 +292,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
 
 
 def main():
-    print("Please wait, scraping data from web and organizing into dataframes")
-    print("This can take a minute")
+    print("Please wait, preparing data...")
     driver = webdriver.Firefox()
     driver.implicitly_wait(4)
     # Each 'card' is information for each question [team1, team2], question]
