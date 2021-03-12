@@ -136,10 +136,20 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas):
                   f'   {team_2}: {team_2_prediction} weighted against {team_1}\n'
 
     elif stat == 'win':
+        team_1_stat = float(adv_df.loc[f'{team_1}'][7])
+        team_2_stat = float(adv_df.loc[f'{team_2}'][7])
+        team_1_netrtg = float(adv_df.loc[f'{team_1}'][10])
+        team_2_netrtg = float(adv_df.loc[f'{team_2}'][10])
+
+        output += f'   {team_1}: {team_1_stat} Simple Rating System\n'
+        output += f'   {team_2}: {team_2_stat} Simple Rating System\n'
+        output += f'   {team_1}: {team_1_netrtg} Net Rating\n'
+        output += f'   {team_2}: {team_2_netrtg} Net Rating\n'
+
+        output += '\n   Current Vegas odds:\n'
         if vegas == {}:
-            print('   No current vegas odds')
+            print('   Vegas odds unavailable\n')
         else:
-            output += f'{team_1}\n\n' if vegas.get(team_1) < vegas.get(team_2) else f'{team_2}\n\n'
             output += f'   {team_1}: {str(vegas.get(team_1))}\n'
             output += f'   {team_2}: {str(vegas.get(team_2))}\n'
 
