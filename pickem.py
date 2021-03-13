@@ -41,9 +41,9 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, 
 
     # Convert abbreviated team names to full name for Basketball Reference table
     for key, value in convert_to_abbrev.items():
-        if team_1 == value:
+        if team_1.upper() == value:
             team_1 = key
-        if team_2 == value:
+        if team_2.upper() == value:
             team_2 = key
 
     output = ''
