@@ -157,7 +157,7 @@ def create_team_df(driver):
     return team_df
 
 
-# Create dataframe of all NBa team stats 'against'
+# Create dataframe of all NBA team stats 'against'
 def create_opp_df(driver):
     url = "https://www.basketball-reference.com/leagues/NBA_2021.html"
     driver.get(url)
