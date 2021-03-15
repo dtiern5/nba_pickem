@@ -188,7 +188,6 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, 
 
 
 def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, stat_list):
-    # Possible stats in question
 
     player = input("Player's full name: ")
     if player.lower() == 'q':
