@@ -7,7 +7,7 @@ from teams_dict import convert_to_abbrev
 
 def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, stat_list):
 
-    team_1 = input('First team: ')
+    team_1 = input('First team: ').upper()
     if team_1.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if team_1.lower() == 'ls':
@@ -16,11 +16,11 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, 
             print(item)
         print('\n')
         manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
-    if team_1.upper() not in convert_to_abbrev.values():
+    if team_1 not in convert_to_abbrev.values():
         print('Unrecognized team\n')
         manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
-    team_2 = input('Second team: ')
+    team_2 = input('Second team: ').upper()
     if team_2.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if team_1.lower() == 'ls':
@@ -28,22 +28,22 @@ def manual_team(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, 
         for item in convert_to_abbrev.items():
             print(item)
         manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
-    if team_2.upper() not in convert_to_abbrev.values():
+    if team_2 not in convert_to_abbrev.values():
         print('Unrecognized team\n')
         manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
-    stat = input("Stat to compare: ")
-    if stat.lower() == 'q':
+    stat = input("Stat to compare: ").lower()
+    if stat == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
-    if stat.lower() not in stat_list:
+    if stat not in stat_list:
         print('Unrecognized stat\n')
         manual_team(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
     # Convert abbreviated team names to full name for Basketball Reference table
     for key, value in convert_to_abbrev.items():
-        if team_1.upper() == value:
+        if team_1 == value:
             team_1 = key
-        if team_2.upper() == value:
+        if team_2 == value:
             team_2 = key
 
     output = ''
@@ -202,20 +202,20 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         print('Unrecognized player\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
-    stat = input("Stat in question: ")
-    if stat.lower() == 'q':
+    stat = input("Stat in question: ").lower()
+    if stat == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
-    if stat.lower() == 'ls':
+    if stat == 'ls':
         print('\nTeams List:')
         for item in convert_to_abbrev.items():
             print(item)
         print('\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
-    if stat.lower() not in stat_list:
+    if stat not in stat_list:
         print('Unrecognized stat\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
-    opp_team = input("Opposing team: ")
+    opp_team = input("Opposing team: ").upper()
     if opp_team.lower() == 'q':
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
     if opp_team.lower() == 'ls':
@@ -224,7 +224,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
             print(item)
         print('\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
-    if opp_team.upper() not in convert_to_abbrev.values():
+    if opp_team not in convert_to_abbrev.values():
         print('Unrecognized team\n')
         manual_player(cards, players_df, team_df, opp_df, player_list, adv_df, vegas, stat_list)
 
@@ -234,7 +234,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
             opp_team = key
 
     player_question_output = ''
-    if stat.lower() == '3 pointers':
+    if stat == '3 pointers':
         player_threes = float(players_df.loc[player][9])
         defense_threes = float(opp_df.loc[f'{opp_team}'][7])
         league_threes_avg = float(opp_df.loc['League Average'][7])
@@ -243,7 +243,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_threes} 3s per game\n'
         player_question_output += f'   {player}: {predicted_threes} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'assists':
+    elif stat == 'assists':
         player_assists = float(players_df.loc[player][22])
         def_assists = float(opp_df.loc[f'{opp_team}'][17])
         league_assists_avg = float(opp_df.loc['League Average'][17])
@@ -252,7 +252,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_assists} assists per game\n'
         player_question_output += f'   {player}: {predicted_assists} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'rebounds':
+    elif stat == 'rebounds':
         player_rebounds = float(players_df.loc[player][21])
         def_rebounds = float(opp_df.loc[f'{opp_team}'][16])
         league_rebounds_avg = float(opp_df.loc['League Average'][16])
@@ -261,7 +261,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_rebounds} rebounds per game\n'
         player_question_output += f'   {player}: {predicted_rebounds} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'blocks':
+    elif stat == 'blocks':
         player_blocks = float(players_df.loc[player][24])
         defense_blocks = float(opp_df.loc[f'{opp_team}'][19])
         league_blocks_avg = float(opp_df.loc['League Average'][19])
@@ -270,7 +270,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_blocks} blocks per game\n'
         player_question_output += f'   {player}: {predicted_blocks} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'field goal':
+    elif stat == 'field goal':
         player_fg = float(players_df.loc[player][8])
         defense_fg = float(opp_df.loc[f'{opp_team}'][4])
         league_fg_avg = float(opp_df.loc['League Average'][4])
@@ -279,7 +279,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_fg} FG% per game\n'
         player_question_output += f'   {player}: {predicted_fg} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'free throws':
+    elif stat == 'free throws':
         player_ft = float(players_df.loc[player][16])
         defense_ft = float(opp_df.loc[f'{opp_team}'][11])
         league_ft_avg = float(opp_df.loc['League Average'][11])
@@ -288,7 +288,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_ft} free throws per game\n'
         player_question_output += f'   {player}: {predicted_ft} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'steals':
+    elif stat == 'steals':
         player_steals = float(players_df.loc[player][23])
         defense_steals = float(opp_df.loc[f'{opp_team}'][18])
         league_steals_avg = float(opp_df.loc['League Average'][18])
@@ -297,7 +297,7 @@ def manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas
         player_question_output += f'   {player}: {player_steals} steals per game\n'
         player_question_output += f'   {player}: {predicted_steals} weighted against {opp_team}\n'
 
-    elif stat.lower() == 'points':
+    elif stat == 'points':
         points_from_two = float(players_df.loc[player][12]) * 2
         points_from_three = float(players_df.loc[player][9]) * 3
         points_from_ft = float(players_df.loc[player][16])
@@ -339,10 +339,10 @@ def cards_add_info(cards, player_list):
 
 
 def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
-    user_method = input("'Manual' or 'Auto'? (\'q\' for quit): ")
+    user_method = input("'Manual' or 'Auto'? (\'q\' for quit): ").lower()
 
-    if user_method.lower() == 'manual':
-        team_or_player = input("'Team' or 'player' question? ")
+    if user_method == 'manual':
+        team_or_player = input("'Team' or 'player' question? ").lower()
         if team_or_player.lower() == 'player':
             stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws', 'points', 'rebounds', 'steals']
 
@@ -352,7 +352,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
             print("Type 'q' to quit\n")
             manual_player(cards, players_df, opp_df, team_df, player_list, adv_df, vegas, stat_list)
 
-        elif team_or_player.lower() == 'team':
+        elif team_or_player == 'team':
             stat_list = ['3 pointers', 'assists', 'blocks', 'field goal', 'free throws',
                          'points', 'rebounds', 'steals', 'winner']
 
@@ -365,7 +365,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
         else:
             prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
-    elif user_method.lower() == 'auto':
+    elif user_method == 'auto':
         # adds card[2] for stat involved in question, and card[3] for list of either one or two players
         # card format: [[team_1, team_2], 'Pickem Question', 'stat' from question, [player_1, player_2]]
         cards_add_info(cards, player_list)
@@ -382,7 +382,7 @@ def prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas):
 
         prompt_user(cards, player_list, players_df, team_df, opp_df, adv_df, vegas)
 
-    elif user_method.lower() == 'q':
+    elif user_method == 'q':
         quit()
 
     else:
